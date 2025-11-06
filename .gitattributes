@@ -1,0 +1,7 @@
+# Track all zip files with Git LFS
+*.zip filter=lfs diff=lfs merge=lfs -text
+
+# Also track model checkpoints if they get large
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.ckpt filter=lfs diff=lfs merge=lfs -text

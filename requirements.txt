@@ -1,0 +1,46 @@
+# Core PyTorch and Vision Libraries
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Deep Learning Architectures
+timm>=0.9.0
+efficientnet-pytorch>=0.7.1
+
+# Data Processing and Analysis
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Configuration Management
+hydra-core>=1.3.0
+omegaconf>=2.3.0
+
+# Logging and Monitoring
+tensorboard>=2.13.0
+wandb>=0.15.0
+tqdm>=4.65.0
+
+# Metrics and Evaluation
+torchmetrics>=1.0.0
+
+# Image Processing and Augmentation
+albumentations>=1.3.0
+
+# Utilities
+pyyaml>=6.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Development and Testing
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Optional: GPU acceleration (uncomment if using CUDA)
+# nvidia-ml-py3>=7.352.0
+
+# Data format handling
+jsonlines>=3.1.0

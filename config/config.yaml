@@ -1,0 +1,26 @@
+# Main configuration file for Severstal Steel Defect Classification
+defaults:
+  - data: severstal
+  - model: densenet121
+  - train: default
+  - _self_
+
+# Global project settings
+project_name: "severstal_steel_defect_classification"
+seed: 42
+
+# Paths
+paths:
+  data_dir: "data"
+  logs_dir: "logs"
+  checkpoints_dir: "checkpoints"
+
+# Device settings
+device: "cuda"  # cuda, cpu, auto
+mixed_precision: true
+
+# Logging
+logging:
+  level: "INFO"
+  tensorboard: true
+  wandb: false
