@@ -1,9 +1,6 @@
-"""
-Main configuration file for Hydra.
-
-This is the entry point for all configuration management.
-Specific configs are organized in subdirectories.
-"""
+# Main configuration file for Hydra.
+# This is the entry point for all configuration management.
+# Specific configs are organized in subdirectories.
 
 # Defaults - these are applied in order
 defaults:
