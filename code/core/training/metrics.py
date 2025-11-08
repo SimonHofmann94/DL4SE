@@ -87,13 +87,15 @@ def compute_metrics(
             binary_preds[:, c] = (predictions[:, c] > thresh).astype(int)
         predictions = binary_preds
     else:
-        # Convert to binary if needed
-        if predictions.max() > 1 or predictions.min() < 0:
+        # Check if predictions are probabilities (0-1 range) or already binary
+        if predictions.max() <= 1.0 and predictions.min() >= 0.0:
+            # Probabilities - apply threshold
             predictions = (predictions > threshold).astype(int)
+        # If already binary (only 0s and 1s), keep as is
     
     # Ensure binary format
-    predictions = (predictions > 0).astype(int)
-    targets = (targets > 0).astype(int)
+    predictions = predictions.astype(int)
+    targets = targets.astype(int)
     
     n_classes = predictions.shape[1]
     
