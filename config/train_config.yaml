@@ -18,7 +18,7 @@ model:
 loss:
   type: "focal_loss"
   alpha: "dynamic"  # "dynamic" to compute from class frequencies, or float value
-  gamma: 2.0  # Reduced from 3.0 - less aggressive downweighting of easy examples
+  gamma: 2.5  # Increased from 2.0 - more aggressive focusing on hard examples
   reduction: "mean"
 
 # Data configuration
