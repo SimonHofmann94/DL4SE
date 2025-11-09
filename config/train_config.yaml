@@ -18,7 +18,7 @@ model:
 loss:
   type: "focal_loss"
   alpha: "dynamic"  # "dynamic" to compute from class frequencies, or float value
-  gamma: 2.0
+  gamma: 2.5  # Increased from 2.0 - more aggressive focusing on hard examples
   reduction: "mean"
 
 # Data configuration
@@ -38,11 +38,11 @@ data:
 # Augmentation configuration
 augmentation:
   horizontal_flip: 0.5
-  vertical_flip: 0.3
+  vertical_flip: 0.5
   # rotation: disabled - could move defects outside visible area
   brightness_contrast:
-    brightness: 0.2
-    contrast: 0.2
+    brightness: 0.3  # Increased from 0.2 - more variety for rare classes
+    contrast: 0.3    # Increased from 0.2
 
 # Training configuration
 training:

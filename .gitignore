@@ -45,7 +45,8 @@ venv.bak/
 .idea/
 
 # Training outputs and experiments
-code/experiments/results/*/
+# Ignore model checkpoints but keep results.json
+code/experiments/results/*/checkpoints/
 *.pt
 *.pth
 *.ckpt

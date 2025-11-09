@@ -48,17 +48,32 @@ mkdir -p data/Severstal/test_images
 if [ -d "data/zips" ]; then
     echo "Extracting files from data/zips/..."
     
-    # Loop through all zip files in data/zips/
-    # CUSTOMIZE THIS: Adjust extraction path (-d flag) based on your zip structure
-    for zipfile in data/zips/*.zip; do
-        if [ -f "$zipfile" ]; then
-            echo "  Extracting: $(basename $zipfile)"
-            # unzip flags:
-            #   -q : quiet mode (less output)
-            #   -d : destination directory
-            unzip -q "$zipfile" -d data/
+    # Extract images.zip directly into data/images/
+    if [ -f "data/zips/images.zip" ]; then
+        echo "  Extracting: images.zip"
+        unzip -q "data/zips/images.zip" -d data/images/
+        
+        # If extraction created a nested folder, move contents up
+        # Check for common nested folder patterns
+        if [ -d "data/images/images" ]; then
+            echo "  Moving images from nested folder..."
+            mv data/images/images/* data/images/
+            rmdir data/images/images
         fi
-    done
+    fi
+    
+    # Extract annotations.zip directly into data/annotations/
+    if [ -f "data/zips/annotations.zip" ]; then
+        echo "  Extracting: annotations.zip"
+        unzip -q "data/zips/annotations.zip" -d data/annotations/
+        
+        # If extraction created a nested folder, move contents up
+        if [ -d "data/annotations/annotations" ]; then
+            echo "  Moving annotations from nested folder..."
+            mv data/annotations/annotations/* data/annotations/
+            rmdir data/annotations/annotations
+        fi
+    fi
     
     echo "✓ Data extraction complete"
 else

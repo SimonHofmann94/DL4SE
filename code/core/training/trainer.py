@@ -18,7 +18,7 @@ from pathlib import Path
 from datetime import datetime
 from typing import Dict, Any, Tuple, Optional, List
 
-from .metrics import compute_metrics, get_predictions_from_logits
+from .metrics import compute_metrics, get_predictions_from_logits, find_optimal_thresholds, log_per_class_metrics
 from .callbacks import EarlyStoppingCallback
 
 logger = logging.getLogger(__name__)
@@ -88,6 +88,7 @@ class Trainer:
         # Training state
         self.best_val_metric = float('-inf')
         self.best_epoch = 0
+        self.optimal_thresholds = None  # Learned per-class thresholds
         self.train_history = {
             "epoch": [],
             "train_loss": [],
@@ -201,11 +202,17 @@ class Trainer:
         logger.info("Training completed!")
         logger.info("="*60)
         
-        # Test phase
-        test_metrics = self._test()
+        # Learn optimal thresholds on validation set before testing
+        logger.info("\n" + "="*60)
+        logger.info("Learning optimal per-class thresholds on validation set...")
+        logger.info("="*60)
+        _, _ = self._validate_epoch(threshold=threshold, learn_thresholds=True)
+        
+        # Test phase (will use learned thresholds)
+        test_metrics = self._test(threshold=threshold)
         self.metrics_history["test_metrics"] = [test_metrics]
         
-        # Save results
+        # Save results (including learned thresholds)
         results = self._compile_results(early_stopping.best_epoch)
         self._save_results(results)
         
@@ -258,13 +265,15 @@ class Trainer:
     
     def _validate_epoch(
         self,
-        threshold: float = 0.5
+        threshold: float = 0.5,
+        learn_thresholds: bool = False
     ) -> Tuple[float, Dict[str, float]]:
         """
         Validation epoch.
         
         Args:
-            threshold: Classification threshold
+            threshold: Default classification threshold
+            learn_thresholds: Whether to learn optimal per-class thresholds
         
         Returns:
             Tuple of (average_loss, metrics_dict)
@@ -273,7 +282,7 @@ class Trainer:
         total_loss = 0.0
         num_batches = 0
         
-        all_predictions = []
+        all_logits = []
         all_targets = []
         
         with torch.no_grad():
@@ -289,21 +298,31 @@ class Trainer:
                 total_loss += loss.item()
                 num_batches += 1
                 
-                # Get predictions
-                predictions = get_predictions_from_logits(outputs, threshold)
-                
-                all_predictions.append(predictions)
+                # Store logits and targets
+                all_logits.append(outputs.detach().cpu().numpy())
                 all_targets.append(targets.detach().cpu().numpy())
         
-        # Compute metrics
-        all_predictions = np.vstack(all_predictions)
+        # Concatenate all
+        all_logits = np.vstack(all_logits)
         all_targets = np.vstack(all_targets)
         
+        # Learn optimal thresholds if requested
+        if learn_thresholds:
+            logger.info("\nLearning optimal per-class thresholds on validation set:")
+            self.optimal_thresholds = find_optimal_thresholds(
+                all_logits,
+                all_targets,
+                self.class_names
+            )
+        
+        # Get predictions using learned thresholds if available
+        probabilities = 1 / (1 + np.exp(-all_logits))  # Sigmoid
         metrics = compute_metrics(
-            all_predictions,
+            probabilities,
             all_targets,
             threshold=threshold,
-            class_names=self.class_names
+            class_names=self.class_names,
+            per_class_thresholds=self.optimal_thresholds
         )
         
         avg_loss = total_loss / num_batches
@@ -315,6 +334,9 @@ class Trainer:
             f"Recall (macro): {metrics['recall_macro']:.4f}"
         )
         
+        # Log detailed per-class metrics
+        log_per_class_metrics(metrics, self.class_names, logger)
+        
         return avg_loss, metrics
     
     def _test(self, threshold: float = 0.5) -> Dict[str, float]:
@@ -322,18 +344,20 @@ class Trainer:
         Test phase.
         
         Args:
-            threshold: Classification threshold
+            threshold: Default classification threshold (uses learned thresholds if available)
         
         Returns:
             Test metrics dictionary
         """
         logger.info("\n" + "="*60)
         logger.info("Testing on test set...")
+        if self.optimal_thresholds:
+            logger.info("Using learned per-class thresholds")
         logger.info("="*60)
         
         self.model.eval()
         
-        all_predictions = []
+        all_logits = []
         all_targets = []
         
         with torch.no_grad():
@@ -344,21 +368,24 @@ class Trainer:
                 # Forward pass
                 outputs = self.model(images)
                 
-                # Get predictions
-                predictions = get_predictions_from_logits(outputs, threshold)
-                
-                all_predictions.append(predictions)
+                # Store logits
+                all_logits.append(outputs.detach().cpu().numpy())
                 all_targets.append(targets.detach().cpu().numpy())
         
-        # Compute metrics
-        all_predictions = np.vstack(all_predictions)
+        # Concatenate all
+        all_logits = np.vstack(all_logits)
         all_targets = np.vstack(all_targets)
         
+        # Convert to probabilities
+        probabilities = 1 / (1 + np.exp(-all_logits))
+        
+        # Compute metrics with learned thresholds
         metrics = compute_metrics(
-            all_predictions,
+            probabilities,
             all_targets,
             threshold=threshold,
-            class_names=self.class_names
+            class_names=self.class_names,
+            per_class_thresholds=self.optimal_thresholds
         )
         
         logger.info(
@@ -366,6 +393,9 @@ class Trainer:
             f"Precision (macro): {metrics['precision_macro']:.4f}, "
             f"Recall (macro): {metrics['recall_macro']:.4f}"
         )
+        
+        # Log detailed per-class metrics
+        log_per_class_metrics(metrics, self.class_names, logger)
         
         return metrics
     
@@ -394,6 +424,7 @@ class Trainer:
             "loss": self.loss_fn.get_name(),
             "loss_params": self.loss_fn.get_params(),
             "best_epoch": best_epoch,
+            "optimal_thresholds": self.optimal_thresholds,  # Save learned thresholds
             "training_history": self.train_history,
             "metrics_history": self.metrics_history,
             "device": str(self.device),
