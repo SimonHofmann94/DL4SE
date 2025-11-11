@@ -3,7 +3,9 @@
 # RunPod Setup Script for Severstal Defect Detection Training
 # ============================================================================
 # PURPOSE:
-#   - Extract training data from Git LFS zip files
+#   - Install Git LFS (required on RunPod)
+#   - Pull Severstal dataset from Git LFS
+#   - Organize data into data/images and data/annotations
 #   - Set up Python virtual environment
 #   - Install all dependencies
 #   - Validate system is ready for training
@@ -29,66 +31,85 @@ if [ ! -f "requirements.txt" ]; then
 fi
 
 # ============================================================================
-# STEP 1: Extract Data from Zips
+# STEP 1: Install and Configure Git LFS
 # ============================================================================
-# WHY: Git LFS stores large files (images) as zips to reduce bandwidth
-# WHAT: Extracts zips into proper directories for training
+# WHY: RunPod doesn't have Git LFS pre-installed, need it to download large files
+# WHAT: Installs Git LFS and pulls Severstal dataset from LFS storage
 # ============================================================================
 echo ""
-echo "Step 1: Extracting data from zips..."
+echo "Step 1: Setting up Git LFS..."
 echo "-----------------------------------"
 
-# Create target directories (these were tracked with .gitkeep in git)
-# -p flag: create parent directories if needed, don't error if exists
-mkdir -p data/images
-mkdir -p data/Severstal/train_images
-mkdir -p data/Severstal/test_images
-
-# Check if zip directory exists (downloaded from Git LFS)
-if [ -d "data/zips" ]; then
-    echo "Extracting files from data/zips/..."
-    
-    # Extract images.zip directly into data/images/
-    if [ -f "data/zips/images.zip" ]; then
-        echo "  Extracting: images.zip"
-        unzip -q "data/zips/images.zip" -d data/images/
-        
-        # If extraction created a nested folder, move contents up
-        # Check for common nested folder patterns
-        if [ -d "data/images/images" ]; then
-            echo "  Moving images from nested folder..."
-            mv data/images/images/* data/images/
-            rmdir data/images/images
-        fi
-    fi
-    
-    # Extract annotations.zip directly into data/annotations/
-    if [ -f "data/zips/annotations.zip" ]; then
-        echo "  Extracting: annotations.zip"
-        unzip -q "data/zips/annotations.zip" -d data/annotations/
-        
-        # If extraction created a nested folder, move contents up
-        if [ -d "data/annotations/annotations" ]; then
-            echo "  Moving annotations from nested folder..."
-            mv data/annotations/annotations/* data/annotations/
-            rmdir data/annotations/annotations
-        fi
-    fi
-    
-    echo "✓ Data extraction complete"
+# Check if git lfs is already installed
+if ! command -v git-lfs &> /dev/null; then
+    echo "Git LFS not found. Installing..."
+    apt-get update -qq
+    apt-get install -y git-lfs > /dev/null 2>&1
+    echo "✓ Git LFS installed"
 else
-    echo "⚠ Warning: data/zips/ directory not found"
-    echo "   Make sure Git LFS downloaded the zip files"
+    echo "✓ Git LFS already installed"
+fi
+
+# Initialize Git LFS (required to enable LFS support in this repo)
+git lfs install --skip-repo > /dev/null 2>&1
+
+# Pull all Git LFS files (downloads the actual large files instead of pointers)
+echo "Pulling Git LFS files (Severstal dataset)..."
+git lfs pull --include="data/Severstal/*" 2>&1 | grep -E "(Downloading|Fetched|Downloaded)" || echo "  ✓ LFS files ready"
+
+echo "✓ Git LFS setup complete"
+
+# ============================================================================
+# STEP 2: Extract and Organize Severstal Dataset
+# ============================================================================
+# WHY: Severstal data needs to be organized into data/images and data/annotations
+# WHAT: Copies Severstal/train data to standard training directories
+# ============================================================================
+echo ""
+echo "Step 2: Organizing Severstal dataset..."
+echo "-----------------------------------"
+
+# Create target directories
+mkdir -p data/images
+mkdir -p data/annotations
+
+# Check if Severstal training data exists (should exist after git lfs pull)
+if [ -d "data/Severstal/train" ]; then
+    echo "Setting up Severstal training data..."
+    
+    # Copy training images to data/images
+    if [ -d "data/Severstal/train/img" ]; then
+        echo "  Copying Severstal/train/img → data/images/"
+        cp -r data/Severstal/train/img/* data/images/ 2>/dev/null || true
+        echo "  ✓ Images copied"
+    else
+        echo "  ⚠ Warning: data/Severstal/train/img/ not found"
+    fi
+    
+    # Copy training annotations to data/annotations
+    if [ -d "data/Severstal/train/ann" ]; then
+        echo "  Copying Severstal/train/ann → data/annotations/"
+        cp -r data/Severstal/train/ann/* data/annotations/ 2>/dev/null || true
+        echo "  ✓ Annotations copied"
+    else
+        echo "  ⚠ Warning: data/Severstal/train/ann/ not found"
+    fi
+    
+    echo "✓ Severstal dataset organization complete"
+else
+    echo "⚠ Warning: data/Severstal/ directory not found"
+    echo "   This likely means Git LFS pull didn't retrieve the files"
+    exit 1
 fi
 
 # ============================================================================
-# STEP 2: Create Python Virtual Environment
+# STEP 3: Create Python Virtual Environment
 # ============================================================================
 # WHY: Isolate dependencies from system Python (avoid conflicts)
 # WHAT: Creates a venv/ directory with isolated Python environment
 # ============================================================================
 echo ""
-echo "Step 2: Setting up Python environment..."
+echo "Step 3: Setting up Python environment..."
 echo "-----------------------------------"
 
 # Create virtual environment named "venv"
@@ -102,13 +123,13 @@ source venv/bin/activate
 echo "✓ Virtual environment created"
 
 # ============================================================================
-# STEP 3: Install Python Dependencies
+# STEP 4: Install Python Dependencies
 # ============================================================================
 # WHY: Training requires PyTorch, torchvision, and other packages
 # WHAT: Installs all packages listed in requirements.txt
 # ============================================================================
 echo ""
-echo "Step 3: Installing dependencies..."
+echo "Step 4: Installing dependencies..."
 echo "-----------------------------------"
 
 # Upgrade pip to latest version (ensures compatibility)
@@ -121,7 +142,7 @@ pip install -r requirements.txt
 echo "✓ Dependencies installed"
 
 # ============================================================================
-# STEP 4: Validate System
+# STEP 5: Validate System
 # ============================================================================
 # WHY: Catch any import/configuration errors before training starts
 # WHAT: Runs validate_system.py which tests:
@@ -132,19 +153,19 @@ echo "✓ Dependencies installed"
 #       - Augmentations work
 # ============================================================================
 echo ""
-echo "Step 4: Verifying system..."
+echo "Step 5: Verifying system..."
 echo "-----------------------------------"
 
 python code/validate_system.py
 
 # ============================================================================
-# STEP 5: GPU Check
+# STEP 6: GPU Check
 # ============================================================================
 # WHY: Confirm CUDA is available and see what GPU we have
 # WHAT: Prints GPU info (device count, name, CUDA availability)
 # ============================================================================
 echo ""
-echo "Step 5: GPU Check..."
+echo "Step 6: GPU Check..."
 echo "-----------------------------------"
 
 python -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}'); print(f'CUDA devices: {torch.cuda.device_count()}'); print(f'Device name: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else \"No GPU\"}')"
