@@ -78,21 +78,23 @@ if [ -d "data/Severstal/train" ]; then
     echo "Setting up Severstal training data..."
     
     # Copy training images to data/images
-    if [ -d "data/Severstal/train/img" ]; then
+    if [ -d "data/Severstal/train/img" ] && [ -n "$(ls -A data/Severstal/train/img/ 2>/dev/null)" ]; then
         echo "  Copying Severstal/train/img → data/images/"
         cp -r data/Severstal/train/img/* data/images/ 2>/dev/null || true
-        echo "  ✓ Images copied"
+        img_count=$(ls data/images/ 2>/dev/null | wc -l)
+        echo "  ✓ Images copied ($img_count files)"
     else
-        echo "  ⚠ Warning: data/Severstal/train/img/ not found"
+        echo "  ⚠ Warning: data/Severstal/train/img/ is empty or not found"
     fi
     
     # Copy training annotations to data/annotations
-    if [ -d "data/Severstal/train/ann" ]; then
+    if [ -d "data/Severstal/train/ann" ] && [ -n "$(ls -A data/Severstal/train/ann/ 2>/dev/null)" ]; then
         echo "  Copying Severstal/train/ann → data/annotations/"
         cp -r data/Severstal/train/ann/* data/annotations/ 2>/dev/null || true
-        echo "  ✓ Annotations copied"
+        ann_count=$(ls data/annotations/ 2>/dev/null | wc -l)
+        echo "  ✓ Annotations copied ($ann_count files)"
     else
-        echo "  ⚠ Warning: data/Severstal/train/ann/ not found"
+        echo "  ⚠ Warning: data/Severstal/train/ann/ is empty or not found"
     fi
     
     echo "✓ Severstal dataset organization complete"
