@@ -10,7 +10,7 @@ defaults:
 # Model configuration
 model:
   name: "convnext_tiny_cbam"
-  num_classes: 4
+  num_classes: 5
   pretrained: true
   cbam_stages: [3, 4]
 
@@ -29,8 +29,8 @@ data:
   num_workers: 4  # Parallel data loading
   pin_memory: true  # Faster GPU transfers
   image_size: [256, 1600]  # [height, width]
-  num_classes: 4
-  class_names: ["defect_1", "defect_2", "defect_3", "defect_4"]
+  num_classes: 5
+  class_names: ["no_defect", "defect_1", "defect_2", "defect_3", "defect_4"]
   
   # Split strategy: "stratified_70_15_15" or "stratified_80_10_10"
   split_strategy: "stratified_70_15_15"
