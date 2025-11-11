@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29495559,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:37:16.573Z",
+            "updatedAt": "2023-09-07T14:37:16.573Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtIRQOzJyAwkmy8WewIptgCfEFcg/f///6U3598FshhLgvyCGRye3UgDcvZ4ujiGVMwpvXiQt1VBgOWCopxNENPSgFlTnr0/IuTx72izoOvNu4qC/vppB26KOmi8ZRQ4yb1zxtwPLGmb1NmLVPSfJF3TPn2xUqri35c8Uavn56LW5jCvD9tZ/GrNYpGa2e53Ts40yt6fuvO/yn33rbdrQ9IjT5qn8rt/TSks7D2dl1j3aG3Msu8na/ZN9Dxl8n/79a+79y/Je7n8tt+5RwYFMjOM9/3TyGDfqtwse7Lxzf3aLd1n+ni+OfGlzD9jfHOi4j6GnysvvZpk+XMlA8jTrn4u65wSmgC1c3hU",
+                "origin": [
+                    771,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29495558,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:37:16.572Z",
+            "updatedAt": "2023-09-07T14:37:16.572Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBmQFm/olQTkcNChoKAAAADUlIRFIAAAC2AAAAUgEDAAAAw+u80wAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAFBSURBVHicdZVLDsMgDESpssiSC1TKUThacrQchSOwZIHqJnyNPXhT6bWaGYNNjcn1NbjOC+KNIuSWCHJH5AH+EFECfH84AWf3cuBMuUDKXMr5KFw5n4VL5yqjnG3jwvns/Mfxh0Zx651xbu04Zz1wzIS2iQ+hfeZhwbuQnXkXkrwJHYL/FrwJOcnDgteeT8WLBeBEtzieXovfP6G0bxE6IPfqHBrfIQ/yXmrFaRxGpUUDadFAQgeX9XEDUV9k4zBoNDholINYK8CbLBwFCmCy3vJ6onPdBge6FiMBR7cNqRZKi1mMcGfGEqD4aAluvKxjW0ULfbtnZ/auoPjKmT1ck3MYfOrZM86db8Z5VI6Zw/T8MQfx8PZrkC+7BTF5015yC2KySBJXIfAP5KB8Nbg037BMNgAy2QDIvAZQ5vkilM8/qkQ6V7okS0gAAAAASUVORK5CYIIpw7Fn",
+                "origin": [
+                    914,
+                    148
+                ]
+            }
+        }
+    ]
+}

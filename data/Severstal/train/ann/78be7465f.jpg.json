@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29490377,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:28:03.528Z",
+            "updatedAt": "2023-09-07T14:28:03.528Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBVwGo/olQTkcNChoKAAAADUlIRFIAAACFAAAAVAEDAAAAlnZm9QAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAD/SURBVHicjdSxEcMgDAVQOBd08QiMwmgwGqN4BEoKDiW2I1vSz12s8l0sISLhnIiXM+GpGIlUNSxETUsmGgoCEU0ltIdMHQ8Rqf0BMnU6pau0pFITB8N6SVVpRep0S+eGrpjc0B32J2fqoGRTpVkiSHogGYSseC3NHnCXALKCxAeSQDIIWfEgC0gAMQf8/D0oESSBZBD6Kw2+qiAFasH1DJAOl7qBVBCYpwkyYArbz7nUUmCaYb6n2ZvvnihpIFUvJPG621JqfgZIB9lgbSuIs8JPRLSlhDR4MzaQwg+LLXXfmXjoVtWDOFIT4mQPZ3hV6ohgX9D95MOIy92K5x7euOO7zZpuc54AAAAASUVORK5CYIL2iYio",
+                "origin": [
+                    1143,
+                    17
+                ]
+            }
+        },
+        {
+            "id": 29490376,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:28:03.528Z",
+            "updatedAt": "2023-09-07T14:28:03.528Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtIgvJ+RGUiGW0i2ACm2AJ8QVyD9////pTfn3wWyGEuC/IIZHJ7dSANyHni6OIZUzDl6bTfvYQUBhgABVlVlA67spc0XbbrcC14eMtr4845jSo6dl9PXVb891fsm/IhTWBS+hFU72zxly5YE93z/9FeZ3/k2J1gnXc6Ts/177ZH/tPgNWVvkNrw1zzWRNpDfULHlpA77Gj3fVWukee+8XiO9dt2ep9NExXTjJm/dZ7jaoPbTpNlXIsIjWM9PBYqK210TbPuUGWagO2PKGsP8tNANOhEiZ97XnjM2u5B6K/1/+febRzkPzxKafYRlryqfenOTIYt/J2eVv4w+D6doxflOX4PjBumPeM98zLDcFXnhUOgHtuMZX/sn/mDsAPqVwdPVz2WdU0ITAHrFfcc=",
+                "origin": [
+                    404,
+                    65
+                ]
+            }
+        }
+    ]
+}

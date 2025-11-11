@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29486630,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:21:34.751Z",
+            "updatedAt": "2023-09-07T14:21:34.751Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBWQGm/olQTkcNChoKAAAADUlIRFIAAABlAAAAWAEDAAAA1lar/wAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEBSURBVHicjdM9EoQgDAVgGAtLjsA1tvNocjSOwhEoKRizQoJJWHXW7puRlzx/jDFmATB8nQqsdVZkOYD0JA+QlQprm1VZO8hlmnj8CTG+6Rphm4rSFbo0gdYIXUGGokaoAxmKqkoj1IMMJcWr3q8S1+OBWogxXsmSqtIh6s0CUW8squWGolIShWZlUYhWexCIenSQVbnenSzrmLW8aH2RY8Esf6NKwkJlU/IoLJSdUh8bqFC2UqVnB7qz9O0DzSt9p3B9j1sXdk/jp+gHE2XiMrEfiFQpeFKLrnQHPl5aomkr81/glfYb0edLTf5XvtX+InrGYrPihmx/lx/SWaIN+wLEOZIL16v7cgAAAABJRU5ErkJggnHvj50=",
+                "origin": [
+                    105,
+                    101
+                ]
+            }
+        },
+        {
+            "id": 29486629,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:21:34.751Z",
+            "updatedAt": "2023-09-07T14:21:34.751Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBMwHM/olQTkcNChoKAAAADUlIRFIAAAB4AAAAPQEDAAAAXD8/TgAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAADbSURBVHichdPLDcMgDAZgUA4cGYFRGA1GY5SMEKkXDlX+moSH7aopty+KHzGOMfYw4gRIJ+zCQOXcgJPbAyJBJBcRDhzKVZknTO1BVt6Vq/LsYLvqrw5C9whAd6/gzuG7xXjSODAzWizX61uXKYMD3iO+n3fv57fx6PrX6dHHl6NyUPbCe7tfYatMDb2EaV8Sd0RZNUrbr+K5PYrjdsiW29JkZ8J2TSnzoVNAXk33RXHKm/IsILdmOSoH5V5gLuqmbLTvAmtP4xhPP563Nzrk/0GA/E+sCL9foPAPus8Umk+MtKwAAAAASUVORK5CYILEVIM6",
+                "origin": [
+                    132,
+                    194
+                ]
+            }
+        }
+    ]
+}

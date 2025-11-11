@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29482739,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:14:31.141Z",
+            "updatedAt": "2023-09-07T14:14:31.141Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBcwGM/olQTkcNChoKAAAADUlIRFIAAACtAAAArAEDAAAAMz2+pQAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEbSURBVHic7dfNjYMwEAXgQUjh6BJcCqXh0ijFJXDkEOEY82N7/ByBkkhJ8Fyy++lpNW8v8RA1xo4iPtK4mRi3Zptx/rW2P2j7adIZiCrMNWD71wTg+75INHarDjNQYzKsTnGPWWMeTvH47TzA//e1WRc+yv1Huf1JVoWPMv0by5d5KnyUM2+IS/OYZVE4nuFN3GBGj+H80znz0EbfjE+4xSwxi5TnJz/oown2mRn0mRn0cdxhbjHLhBVkd7KkfZbjh/dZwkmf9VKqYJj32c+qDobjPv4GkzAcLd57Dha/B5daDcMBh+GgTxj2faKw7xOHtz4svPVh4bUPD699NGe3OD9H18WTsFs8DTsGYdsHhW0fFCYJwyRgmG4cHnU5SGCzyX0IAAAAAElFTkSuQmCC9JOkaA==",
+                "origin": [
+                    514,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29482738,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:14:31.140Z",
+            "updatedAt": "2023-09-07T14:14:31.140Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJlQPyAkRlIvglj4AFSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EGEvZ0cQypmHP2uiNfs4IAa0AP93TbJvePGUUmfYcEIzYp+KxeyjXjgzXrrXOHfhgpck2UF1G64pUS/9347VOmdvWTy3MXJXjVWutcNlu5xbfqc9GtlG0zZTfwC3vGaWzLyfnauHJx6d72eWY1/ba5r223bsl+H91bW3/edNm3uFU6u6tTI2vvhmz5Zyz94uvybfVp5R8vXRG7wZC9TNTgVv91mxnebpXPGnQvs0Uway9T3XDik/3m9FuM0QmHt7CF+eQfP7kyIXAbXODA7aIjz3VTArexl+X/5DnwYbdJil1aQlO8YGGEy2nBXou/d0wmfm9fdSL52dvNkzbKKwfxq1ya9e217Lm/O88JPGQ/DgwKBk9XP5d1TglNAKcLlUw=",
+                "origin": [
+                    311,
+                    3
+                ]
+            }
+        }
+    ]
+}

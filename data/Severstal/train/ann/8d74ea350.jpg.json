@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29492052,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:30:56.845Z",
+            "updatedAt": "2023-09-07T14:30:56.845Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBFQHq/olQTkcNChoKAAAADUlIRFIAAAA+AAABAAEDAAAA0QhXbgAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAC9SURBVHicxdaxDYUgEAbg31BYOoKjOBqM5iiMQElBPOEQ8wr1EUCh4L4cARII5ABAkkNogmhjzETE8JGUj2PA6rEEaGAIkQwwMdwxEuZH0AmVsCboBJNgeUteqDHsE6bvYeJZfg1xB/0ihgKstUBbqDzIHlgYeAGyDvQH2yOGOogijDdweZjqMNdhYdhSyH4wXaF/QC3Q6/vJR8brvIa8xtYaLv1DOTAJZ22Co1qJFY3ku4kphZiKJY5P2dDvFVox5FmSl5MAAAAASUVORK5CYILvR22l",
+                "origin": [
+                    176,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29492051,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:30:56.844Z",
+            "updatedAt": "2023-09-07T14:30:56.844Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtIzgfg7IzOQNMlJuQyk2AJ8QlyB9P///5fenH8XyGIsCfILZnB4diMNyHb1dHEMqZjz9sbB3MMGPKwBorZfZgjaeLltdrusIdPoLseysvf2iS1fmGtM9CYw/TK3P3Bsud42yUOG78Xarsyq3nUt6vREvdLTDxO/qr8s+xrYL1ge3n2v4OUFgWfV/PPXXr6V+FdukbfLj9AvuQ6lk3/4/XWIXi542uLptUxJQz5m22OiDzPqmx48Ufsnd/pIsKG/jehb1cKnAZkiUsK9E92+PGqKyDhjItXrtdimvfOYx+PD65vlHpazHPFZfHGFCVcvUCi5gou7d6bb4kCIlmMHkhYa+s+pELp1+lHpI3tnVw0O4UMdBgw6HMZOzis4WBMXGSrxMHAf6rkgoOXkOEPAraX8M3dvU8F9pVgH3/6uDVe/WE9rAZLVsxkurN3wbau/WwbH91nvxFkXWcQcf8en7JT+9gX3ocOL8iR3v3+RvS1YrGVfWnXL6p+cW8VvZe/bXxkNDF0GT1c/l3VOCU0APpexTg==",
+                "origin": [
+                    1320,
+                    0
+                ]
+            }
+        }
+    ]
+}

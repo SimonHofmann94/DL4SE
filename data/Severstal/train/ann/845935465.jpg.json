@@ -1,0 +1,64 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29491299,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:29:32.104Z",
+            "updatedAt": "2023-09-07T14:29:32.104Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtFA/J+RGUgK1J/TBVJsAT4hriDB//+X3px/F8hiLAnyC2ZweHYjDciR8XRxDKmYk5zw78CH+gWBfztc7SXeuBtMko84wsBgZ5/QqzyPcxVQHYOnq5/LOqeEJgDq/SLK",
+                "origin": [
+                    677,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29491298,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:29:32.103Z",
+            "updatedAt": "2023-09-07T14:29:32.103Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtICQPyDkRlI3tf6chZIsQX4hLgC6f///y+9Of8ukMVYEuQXzODw7EYakOPg6eIYUjEnOSEhPeHHeYX/8x/a633pZ/rSrhHSz/13AU/tAgbbBTyyCj1vCheynRJg/nmizyjFmePkA1chEQVGJg6GLVbv6hXMCy2BZjF4uvq5rHNKaAIA2dUyEQ==",
+                "origin": [
+                    1314,
+                    2
+                ]
+            }
+        },
+        {
+            "id": 29491297,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:29:32.103Z",
+            "updatedAt": "2023-09-07T14:29:32.103Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtLcQPyLkRlI+q7Rvwmk2AJ8QlyB9P///5fenH8XyGIsCfILZnB4diMNyNHxdHEMqZiTnFB34MN8o5B+edkFupuWy2YpNDxh5/v42J1ni+sbE+ecFgFhVw6Gp2+XsQvnXv0M1Mfg6ernss4poQkAhq8qCw==",
+                "origin": [
+                    1342,
+                    2
+                ]
+            }
+        }
+    ]
+}

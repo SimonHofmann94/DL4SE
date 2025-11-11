@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29490242,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:27:50.715Z",
+            "updatedAt": "2023-09-07T14:27:50.715Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBHQLi/YlQTkcNChoKAAAADUlIRFIAAADrAAAAnQEDAAAAb78dSgAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAHFSURBVHic7dZBkoMgEAVQp1y4zAWmyqN4NDkacxOOwNKFJZMgaAv8jzUku2GnLzTYNJCum1XH2uwc+8GTnasw9o+yu8HbP/+B18/w1xvYclaU8cQ9a8o4Z55xbM9LE9smNpj7OusmVk1cCW6a2HImS9Lz9b7BpJgGfuIOtMx31k1sOOOpD/xs2Rl6YOSRwbqdXMy95EJ6E05zkPG1Oh45y88o8rmIiMMQkPf+mBfOvjthw9mW0yIHJ7zWuce8cXYVVvGyKDfN2VS5I2w5L5xfeZkxb5xdnSfCivMzbWP2cj0W2ZRYH6nUhWITVaAL5aLP+vY7Yc46x5dho3Vp57CS+TZf5ZuDv5LOPl/itAoTkOeXfAifbwUP4qQKg3eyfacM76RHMrES4ytppLF3tpCnG2wgz03MP7vCd/4yYu7z9Xof37lpMVeW+/PVYDhryHO6w4qcp272Pdyl2Us/k5+sxzf6p5+U3YXzpnZFt0GFNeeQQXSP2VuMrtiF83qLH4A3ziGrI2LVxHtWJ94bcZg54oWzyUq0MDTiuJcBr5xjpYOhNedY5hMdGpRDHBpE1wePBRWHTCH6GVpENzELF31FVzKYEfYLhMsrnx+/ElMAAAAASUVORK5CYIIxhf+/",
+                "origin": [
+                    564,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29490241,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:27:50.714Z",
+            "updatedAt": "2023-09-07T14:27:50.714Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJJQCzNyAwk97qdcAFSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5Dh7ujiGVMxJTmho/v9fUEfAYYPCnv//O59eVf4o5fHgZnCrev/k8gYWOftCmwSJgxX1BxKP86XVN7SpWN/gNTjwj1/wFg+Dqy+/XACjzGSgcQyern4u65wSmgAtuTNS",
+                "origin": [
+                    570,
+                    165
+                ]
+            }
+        }
+    ]
+}

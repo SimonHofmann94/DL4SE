@@ -1,0 +1,100 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29483877,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:16:48.871Z",
+            "updatedAt": "2023-09-07T14:16:48.871Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtK6QBzEyAwkfy04fxZIsQX4hLgC6f///y+9Of8ukMVYEuQXzODw7EYakOPt6eIYUjEnOYGh6T+/hMST///Zg/7/D3a5Gtxv5cCUam8w5Y9DAC/PnymBZwS43nAqHOVZ6ODIueiGosgE7mU/FEWYp0xqD+jhPyBymJ8h4VhtUs2Ha1ZAYxk8Xf1c1jklNAEA+fc3Ug==",
+                "origin": [
+                    1555,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29483876,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:16:48.870Z",
+            "updatedAt": "2023-09-07T14:16:48.870Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtI6QBzNyAwkjXK/WgMptgCfEFcg/f///6U3598FshhLgvyCGRye3UgDcjw8XRxDKuYkJ/w7z8B0BqjInmHhv3qFtqTl4kf99b3k1L827Jpiu3dFlVQwT8IrZmbmlsMMDw0cLHgUUhVeyVs0OlrwCPAxtzAzGB3ZcCc4e00d0EwGT1c/l3VOCU0AxSwzew==",
+                "origin": [
+                    1553,
+                    114
+                ]
+            }
+        },
+        {
+            "id": 29483875,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:16:48.869Z",
+            "updatedAt": "2023-09-07T14:16:48.869Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtKLgFiBkRlIrnYx7AZSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5GR4ujiGVMxJTjjA0POfP6Hj5v///Xqn/sjzSE04+ur///bOU/+Ps9xwlewQ/8teyMm6qF5D7G/jE99PLvYBOr8YpmssU9C4pSHC6mZoHxbYo/GrwUM3w+nEysfsUUXOwW0ecbwvmnh43tQH/GQITnoTcjTKvhFoJ4Onq5/LOqeEJgAAQEYl",
+                "origin": [
+                    441,
+                    130
+                ]
+            }
+        },
+        {
+            "id": 29483874,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:16:48.869Z",
+            "updatedAt": "2023-09-07T14:16:48.869Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtLpQCzPyAwkD/xzFANSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5DR6ujiGVMyZe+Egb4MCD+sFKX452YOmNi8zLGZ1dr9gu/Mk4ce2pVpqxyRmX/igUfDDJWrp8jUTVrs8uDcrK1DW19Zs3uOKY0wGGlwK35ZrLZFKtTeZrtXzTuR+FM+Mp6u/qtmc/h9SMfX0ltqwmonmvrdOuvT2BTk5Ol0peBryeKap/XSndxVv7ysrW088ULUB6BgGT1c/l3VOCU0A6BBVeg==",
+                "origin": [
+                    831,
+                    132
+                ]
+            }
+        },
+        {
+            "id": 29483873,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:16:48.867Z",
+            "updatedAt": "2023-09-07T14:16:48.867Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJ5QKzKyAwkZ3L5iQMptgCfEFcg/f///6U3598FshhLgvyCGRye3UgDcvo8XRxDKuakTtwteFhBonmqt+Nka7cTGpGn59pKLTZw8uKaL9rT6NG5q7+9jpNBJ+DuDBHmlT9UuhVW93mWm/UyT4zd+bA7OHq/1h6uZWbuhlzPxLJe1bqZhbx+1Mx9pqq9UvY+H/PVXzqKhtv/+wkZ7ywtes3TPfM497q+600JL3hTow0truX+XSN1XsBeQnajtZ3dt2SB2UH3lysBXcbg6ernss4poQkAUiJTRQ==",
+                "origin": [
+                    666,
+                    134
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29482507,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:14:03.852Z",
+            "updatedAt": "2023-09-07T14:14:03.852Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBlwFo/olQTkcNChoKAAAADUlIRFIAAAA2AAAAyQEDAAAAUk9TUgAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAE/SURBVHicldRLbsQgDAZguyxYcgQuUpVrdVEpORo36BVyg2bJYhTa4t+Z2mQ06mw+ERn8IBmi3x+vAwre+sTNyur+wIZ4Z7yJyZlhgYuzi+wMMDpTb8Y8KXWWBy6nm7FPVinnaxiONMyHqV6rzHCZbP+yP3W/kmGC5W6T4/sBu7qO7dJu/5QNXQ7gWxrPueURx1sZ+8Naxnkvf6ZW7bTE4IwwOfPpUVEvxjHKO+0Sx86ANqIzoc2Atkkt53U1rHe4IW+F2t7lmNXgjHh51HTXpJ3T7ybtPF19rnH61ui3Ie0x8hDG9hOwIoE1wwQj9gUnO8mtNU73Z1hcftTDMMDoDKj/QrOPZ+uVP3VU1FdxkF1HN4fk5nPvBx7W6b+sGRn3pRLukRa14jyYJS0lmMn6Bl/hB3yHSE9IR5uzOlfjN9zrnhYuWzz6AAAAAElFTkSuQmCCete6eQ==",
+                "origin": [
+                    1184,
+                    7
+                ]
+            }
+        },
+        {
+            "id": 29482506,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:14:03.851Z",
+            "updatedAt": "2023-09-07T14:14:03.851Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtIcQMzJyAwkTef+zwVSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5Ih6ujiGVMxJfpA+4/yH+Q/lRf4lWDAwWO1lj9u657YUUAGDp6ufyzqnhCYA2Y4geA==",
+                "origin": [
+                    1217,
+                    20
+                ]
+            }
+        },
+        {
+            "id": 29482505,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:14:03.850Z",
+            "updatedAt": "2023-09-07T14:14:03.850Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJSQCzByAwk7/nUtwEptgCfEFcg/f///6U3598FshhLgvyCGRye3UgDckI9XRxDKuYkJyQkMjDZCSjyK72Sbjjy/z+7hMRDls////MKNMn61LAL9v83NvggzyLI3tBS02zrYX+BxXJCpBlPDg+PGI8PDw+bgjG3gwtThwWDkoMZ0Iocmd+6M2b1AS1g8HT1c1nnlNAEANUkMKw=",
+                "origin": [
+                    1188,
+                    30
+                ]
+            }
+        },
+        {
+            "id": 29482504,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:14:03.849Z",
+            "updatedAt": "2023-09-07T14:14:03.849Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtLCQCzEyAwkmw+VawEptgCfEFcg/f///6U3598FshhLgvyCGRye3UgDcqw9XRxDKubonj7IyyAg4HJRX6XPK6DrUpl3cJdXjyrf+w/GkhoO/M8U1DmLMha68/v6vL74+MY+6ZC/8Z+YJS5LtAvuCp4MNIbB09XPZZ1TQhMAbqwuOQ==",
+                "origin": [
+                    1320,
+                    31
+                ]
+            }
+        },
+        {
+            "id": 29482503,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:14:03.848Z",
+            "updatedAt": "2023-09-07T14:14:03.848Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtFAzMfIDCTPbWSZCKTYAnxCXIH0////l96cfxfIYiwJ8gtmcHh2Iw3I0fd0cQypmMN7aCMvgwADw4ZjSSVM6Tds1D7OCp6TsGXhSoc/y7c80ZV/K/G/aLnj8iCbR+bcrLMbhKqBWhk8Xf1c1jklNAEArEUq9Q==",
+                "origin": [
+                    1194,
+                    213
+                ]
+            }
+        }
+    ]
+}

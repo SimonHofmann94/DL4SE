@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29496708,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:39:53.394Z",
+            "updatedAt": "2023-09-07T14:39:53.394Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBSAG3/olQTkcNChoKAAAADUlIRFIAAAG1AAAAkAEDAAAAtXJnrwAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAADwSURBVHic7dk9DoQgEAVgjYWlR/AoezQ9mkfxCJQUxlk37o8KyMwURNz3SpMvwcmDBC0KN2Q8D6MpackgZhWt6XVsiYTVtMnEZg3tY3msJScjgz1cxhmtn0VH24UY0XzCwupsseU5C8EqxvwvWceZrz4s5sKGx45TbZns0FfGSLxQ4rY9F7nNCSJzPyh0340ldZ/Gid0byt1aVYUjrSOtM/k45qbdx97fNXd2k+T4/C/3SOnmfFwH5wncNVwPl7Ub4AJOxdRuhMvaGTg4ODi4WzsLBwcHdznXJXUm8X0s8fclq3Sj0g1KV+jcpHOvX1ZPvxUb6jn88mUAAAAASUVORK5CYIJkE42V",
+                "origin": [
+                    723,
+                    112
+                ]
+            }
+        },
+        {
+            "id": 29496707,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:39:53.393Z",
+            "updatedAt": "2023-09-07T14:39:53.393Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBawGU/olQTkcNChoKAAAADUlIRFIAAAEmAAAASgEDAAAALEtrDAAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAETSURBVHiczdZLsoIwFARQLAcOs4QshaXB0rIUlsCQQcp+Jnw0IdzuwSvLHuqxuGkgseuqDGP9SSM9wJkHOMuIMYctwUAPgLM7wNkNRaa2AgQ21KrFzqjB+gYC5hL5JqrY7QKV7HGpPtnVBVNGc4F73gs10PuSd0vFXTlLPe1K94zCWMf4153mzLTTlMg7xTH+YKttfILWV8DsNGWmnaYsvFNs4zME8E5TgqQmYYl5fEE9JQV6r3OCpCZJLfwGIT1i/6n8j6r+62r4uhKQrHpJOUkpb0fk29eqvKSE1yNKm05UNrCsnKR4F1HZylflJUW7CMq5MCsH5H7aOlMdx7tVRvj449F2satTbvzL6fvCnX/+yh95xl1aJn5g4wAAAABJRU5ErkJggsCnoyU=",
+                "origin": [
+                    1281,
+                    182
+                ]
+            }
+        }
+    ]
+}

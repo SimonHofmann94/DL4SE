@@ -1,0 +1,100 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29493503,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:33:19.330Z",
+            "updatedAt": "2023-09-07T14:33:19.330Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtLLgXgzIzOQvDZ/nhKQYgvwCXEF0v///196c/5dIIuxJMgvmMHh2Y00IKfK08UxpGLO22uneRsUBFoSedj7piVoTmlbGtmlWvEloaync9KOAsOJ7gn/H0/XTJjCZSQyi3mHVIzg/MKrHyq3MoT3lh9J72eb5jfRb24G41bBua7Cr0NipvOVvvG5rnWlI+26rgX/IsuSEyt2v1i70flmm5zpauG/zi9n32L7wnLzbnmnsm/3Z6ArGDxd/VzWOSU0AQCcV1FU",
+                "origin": [
+                    1215,
+                    77
+                ]
+            }
+        },
+        {
+            "id": 29493502,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:33:19.330Z",
+            "updatedAt": "2023-09-07T14:33:19.330Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtKaQLyCkRlIujuFngBSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5GR5ujiGVMxZenQjb4OCCOsBdx0NycbAiJO8CSbuhSzeXIfCDQ8eUni0+xlDwjHPfFXNmZMmTdo7KSrn6ctLEx9v6v0U8Cz4ktdn1oRHQWunTTS48utE8c5bbin3u+ee+X9p7rNZWTM99qrPdRB5V7NclqVUfDo3z7Z3QFsZPF39XNY5JTQBAHJTS5Q=",
+                "origin": [
+                    1141,
+                    87
+                ]
+            }
+        },
+        {
+            "id": 29493501,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:33:19.330Z",
+            "updatedAt": "2023-09-07T14:33:19.330Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJKQCzHyAwkiw3jwoEUW4BPiCuQ/v///9Kb8+8CWYwlQX7BDA7PbqQBOaGeLo4hFXNSz23kbVAQaXl4PyLCiGmxgVTPM42+hMxEi/n8Kipm8cUn7zJaNSy4fGaXT2l+xJJXXGGbN/iyFav7LZtfGbHr07bEv2f23fD5t1DyflOdwOkKhrlXkqfcnq60AmgBg6ern8s6p4QmAL6qPrg=",
+                "origin": [
+                    766,
+                    95
+                ]
+            }
+        },
+        {
+            "id": 29493500,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:33:19.329Z",
+            "updatedAt": "2023-09-07T14:33:19.329Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtLyQKzOyAwkz3oy7gJSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5IR6ujiGVMxJPbeR84ABj8tFY72QKpbeRxfnBBo3nRY5KC7LOHPCM8UWB/kN3A6PWeYYlt07IMDTteLQpG9HJ/utmz7R4Obu2ueevzfG+xV2OS+dmK29gktfmN/mc860lS8nvgFawODp6ueyzimhCQD+Sz5d",
+                "origin": [
+                    547,
+                    104
+                ]
+            }
+        },
+        {
+            "id": 29493499,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:33:19.329Z",
+            "updatedAt": "2023-09-07T14:33:19.329Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJfgLiLkRlILj/5lQdIsQX4hLgC6f///y+9Of8ukMVYEuQXzODw7EYakFPu6eIYUjHn7vWNgg0KPK2JNtze7gUi7sqLDbmUlyx5wLMtwKGRqbL+99Wd5YaTXJf5aF1MKZffEXvDdsdnhv3i3xjeFTbEC/9lLI88cN5+7oG7L78vPm67Y3Pd/Wy5A7ZNv60NpDdx7wq+vJp/WlX5g3e380ytv1fHFfLNYbD2jEj2uaAVBnQCg6ern8s6p4QmAPYuT+0=",
+                "origin": [
+                    802,
+                    117
+                ]
+            }
+        }
+    ]
+}

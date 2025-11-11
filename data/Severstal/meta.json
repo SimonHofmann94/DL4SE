@@ -1,0 +1,38 @@
+{
+    "classes": [
+        {
+            "title": "defect_1",
+            "shape": "bitmap",
+            "color": "#E6194B",
+            "geometry_config": {},
+            "id": 50137,
+            "hotkey": ""
+        },
+        {
+            "title": "defect_2",
+            "shape": "bitmap",
+            "color": "#3CB44B",
+            "geometry_config": {},
+            "id": 50138,
+            "hotkey": ""
+        },
+        {
+            "title": "defect_3",
+            "shape": "bitmap",
+            "color": "#FFE119",
+            "geometry_config": {},
+            "id": 50139,
+            "hotkey": ""
+        },
+        {
+            "title": "defect_4",
+            "shape": "bitmap",
+            "color": "#0082C8",
+            "geometry_config": {},
+            "id": 50140,
+            "hotkey": ""
+        }
+    ],
+    "tags": [],
+    "projectType": "images"
+}

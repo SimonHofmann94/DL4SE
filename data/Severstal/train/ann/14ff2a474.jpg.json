@@ -1,0 +1,64 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29482737,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:14:31.141Z",
+            "updatedAt": "2023-09-07T14:14:31.141Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBrQFS/olQTkcNChoKAAAADUlIRFIAAABvAAABAAEDAAAAh966GAAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAFVSURBVHicrdTNjcMgEIZhIw4cKYFSXBoujVJcAkcfViHZrL3Mx89gwLk9ihLNaF57CeFnIR+eNryeY6BcO7nVaTrpblO3uN+matGPUmY8Rinw/JOE888RarBz3OrkO8vp6mx2to8y78yPMg/reIgSa5hhUlIvQ51pWE1ut8l3ZrEGnnxnK9bQxbwzP0qN558kPb+aI61BzjHUyXcmMA6e7c7cKPPO9lHmYfmHaLCGXtLz6zm+6lSdDHXyYRW43WU7O4dTERqkRX5Ezi+RGmmQFvg7BDm/Qmr224TfKWINCQXLpcRYg2W5Ik2BsQbNUhUYzy9ZCuRS4oY7VLmy/K7katQsFTJJJ6FguRToIy3LNSd5kRikZqlykheJzEn2/zuaQ0YHdEDbk6+4A2kvoTl5FKlP+iLVyb1IiVOJMjfcIeG1sC3x/4FY6cgX94sG/rj44H1++gZEZt+BbsysnwAAAABJRU5ErkJggiZkv3k=",
+                "origin": [
+                    269,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29482736,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:14:31.140Z",
+            "updatedAt": "2023-09-07T14:14:31.140Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBiAF3/olQTkcNChoKAAAADUlIRFIAAAC3AAAAigEDAAAA0kRJrwAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEwSURBVHic7dfBbcMwDAVQBz74yBG0QjfQaMxoHcUj5JhDIbaR5FgSPxUQaA8tyoOBPAuS+GHB8bJ09bbg+sC8CnaSHXqQO3QWONFFRN6Bb19+g9OLJDyNyBUOBxOV4aJaLsPVTtfK404PHhaIT++ioCf3HUhTeo8ydra2vp++td4sTK03C4TOzw5i5+dOWfo6shDsF8NXp2+Gk+HB6dFwHn3H7b5wFUN11W511e4Lpx/28Ms9Kr/9+5/w+7c6O11xcX3ci+vjPnd93IuT4cHp0XB2uubsIIbsoN38ErYcxJCdnB6cHp3OTgf8cBTbzFFsM0dxzpwMD8iT7dHp7HTEE4dxThzGOXEY58TJ6cHp0ens9HxVYWRP+uFKx6cAjR7qv9M4OC21uPezHr+v9X76BFKZMO44N3UWAAAAAElFTkSuQmCCpQG4Kg==",
+                "origin": [
+                    1417,
+                    118
+                ]
+            }
+        },
+        {
+            "id": 29482735,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:14:31.139Z",
+            "updatedAt": "2023-09-07T14:14:31.139Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBuANH/IlQTkcNChoKAAAADUlIRFIAAAG0AAAAegEDAAAA7W80dQAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAANgSURBVHicndhBlqMgEAZgbRcuOYJH8WhwNI7CEehd+j0njAoFBVUg6CY9MR9SP4UTM03149M41zj27ysmnFMv2OKcMy/cfro3BcrTuXE2X8zpYbfczg679XbHsNtuN17g7t4VKL0bXgnP3GirzcGNttoCzoy5FdxggcK9K3ADN7iC+wu3nu0lo1Od6k7SumG3uvzQnU68dFvhTKfbXzpZONvp3Ds3l66zQZfSdd5iyuXrdeUy9G6Ichl6Xck6NwSJpdORWDo3BIml05FYOjcEZc3G3sMrE0vbhfYVjLMNJ0MCTHnNxpZhSgy7G/Sn4rjPY7eOOOWncTWo0CwjmzVcxpd7/rGZbmcn6B51DmBZV1u2FZzkQ+Wciu/rcz78LmR2wTfN31yedYI6P7FQ6VrZFYwz9wnphxCVXbHx5QV3XOct53bCDnTiuF7YQKmz6MT3emFvo5I4jQu4zrMLQRx8yjslHR8ouRxUI/zF0QzaTmfu3paGMtrWcMY3kkVJNd2Ru9/svYaLc/KN/YejQgfZDoo78+zS0DM3WNUp1hniiu2HT6G37YMzFUc7O3dZHbLlBB9K4eICLqzL13dnTgjW2ZqLE5FQyYadztxG3exYN9UcnFlZV7Sh4BxMCRVRpo2XSMFQnDO5W3qdyh1uUF06WY0lazQNaRjqyK6WDYfGtKVDNZjCMTWkYyMOvuu0bwaCzCU6tEb0prXWHR0SHWgyoSUk/IFKIOXh4kuHIiMMh30UTjbKY1y8cKs8POoXPn6UjpaHqygcqpxhODX4uHcpafb/frRKKjh/4bSyhnNo4TVMrxhQcQ4tvIF/66wA/rsbKt+Cu/+IgVW+gCf3gXnfwcQFYssjC7hCsu3ySBuKkNCcjcYcm8tGFqHS6GrPFynvO8d7mAPlXHNoAc0Uv+olZ5/dB7kVD8YdaOGv/GVIKDr97K7oIFkx4Fx0KsWsOpyC+HVyFVbclqPbR5yBq5voqr8nYGchRhPbtv67B3IfcDa6+mMscgfEbyf36PbkvuDSPG3Vrdht4LYYVU8wcHET+6Xu8ERVdNAOuu7wrVDGT8NIdYcmatJV5KNDE7XJhWAaDE30L81OhIQbR5rov+R8MO2f18gD91VVh2MfMe5gnn4+LJ6hrreuYMwDm4qHxOk/VvsH2/7hJpsAAAAASUVORK5CYILtLMr4",
+                "origin": [
+                    953,
+                    134
+                ]
+            }
+        }
+    ]
+}

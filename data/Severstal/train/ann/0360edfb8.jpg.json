@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29481423,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:11:56.142Z",
+            "updatedAt": "2023-09-07T14:11:56.142Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBqwFU/olQTkcNChoKAAAADUlIRFIAAABQAAABAAEDAAAAHiZjrQAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAFTSURBVHicpdSxtYQgEAVQPBv80BIohdKgNEqxBEICDuyKyjxgFP2a7A3AnTcDirQ+VqwPUDc0LdWIsqFoOY/491O84mfE6cdwRXFKv1OPqCq6nvIZl//RvqYZkd/Gl8NkU2z72LHACGHccDTgGF0cRNsyb1tYOpaeZWiZK4ssE0/D0h6JKy4sHUvPMhxNrRhfcKKXvae4R/+Y+hbDPaoS/ibTPcpM84D2nKrl8oDunLqlf0D+Da4Ma6vhinZEw1IMGEe8OpO6pESqhjll9wXBD4QlwpWNxLxiu3t5xc51xXaJcmbgnjPvA2pqK1BtdDUl/V3PUApGRioYmGpC7T0DJQJ6mlzDieoFfigbEFoJnDsaigks4+yoS4iegcoFQuU8Q90RYN/eWPd/Z6ope5oS4oS2HJKGidbyPNaKioqK5CkpJnDu6Ck80NX8dFyovwfXX/EFoIek5vCNsAEAAAAASUVORK5CYII+ULud",
+                "origin": [
+                    682,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29481422,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:11:56.142Z",
+            "updatedAt": "2023-09-07T14:11:56.142Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtLWQHyJkRlInlugtQtIsQX4hLgC6f///y+9Of8ukMVYEuQXzODw7EYakDPd08UxpGLO0Qu7eZkVBVgCwqQFgpiWBkhNcdMMb3Jmv7a2nvP0naiE03dUPi85eWxneddrBwa2CmlGAUbOCas5XzoybHvIyCiQq+LA1sHJZHCgO0fqoBuLioNcg09D1JXkDzx/0kVaDRosmo/7P3KbmK7A+y35As+Ow8UZBb/FbHpe2z/kjbmmlJGTLch7ZauH1FOVFN5yobi9/3usr1e2ZH7dZfIJ6EQGT1c/l3VOCU0AJe9WEw==",
+                "origin": [
+                    948,
+                    46
+                ]
+            }
+        }
+    ]
+}

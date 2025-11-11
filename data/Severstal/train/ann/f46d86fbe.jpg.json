@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29500247,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:45:44.545Z",
+            "updatedAt": "2023-09-07T14:45:44.545Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBkQFu/olQTkcNChoKAAAADUlIRFIAAABuAAABAAEDAAAAaBzRJgAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAE5SURBVHic3ddBjoQgEAVQjQuXzgEm4SgcTY7mUTgCSxaEmhmB7vp0pNsUPWOGjXkxBotfJDAMZaxu4IM814icKHDONSPnUpM4FZE5pibajrkS2WMSkTvk+E2PZDVMj2Q1zI+kNu8lLWeoBNR9+IH8ROqKBrjaPZPMvYXu3HvmTnVj+hQ4EnBBaiQBJ+SSYi/USPofdH9EFvfPY0Ma5ACMjGvae4we6ZAWueW/yTTI1E38LadFutQ/7Dc4A5LyXi80yC1t7rIqFW1N1aCrqRv0aW0OSZwhVV+SDBNyBkaFTNOWpogrsIw2vYBBwCggnaKpqV/nJqAV0AnoBQwCSub1/cp3/VKwzXwlPNWEbQ5PqF5m7MfQj/4a7FjRRdgx7ouQ8nH+WoxvY/gt+mfMB68b8wGQXQ4VlTvKFxAgKUOOvXiKAAAAAElFTkSuQmCCOG2p7w==",
+                "origin": [
+                    1,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29500246,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:45:44.543Z",
+            "updatedAt": "2023-09-07T14:45:44.543Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtIKQDyBkRlIBtf9PgSk2AJ8QlyB9P///5fenH8XyGIsCfILZnB4diMNyFno6eIYUjGn9tJu3qMKPKwByl1Teg5orPliVuB2WqPHwbPxw2FOQwHGs5k6jfbiDnMZCgy+aSU4XuyV5xT1LVTpfcKZ//WHkPqWLLEVhX0xTeKHPEQmTWCdNWH7EtFCbw3rikCmgvP8GhaMP8V4X33449C/7oq9XbfBHbfDYZeapR3ltjraZnrHCIb94EuZk1AZoux+rab4qGWADPeOg0KiBqqWDPY/mKdZdG09c3xzIdCxDJ6ufi7rnBKaAGzTWYk=",
+                "origin": [
+                    116,
+                    63
+                ]
+            }
+        }
+    ]
+}

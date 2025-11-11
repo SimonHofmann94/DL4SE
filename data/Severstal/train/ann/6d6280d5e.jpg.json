@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29489512,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:26:31.490Z",
+            "updatedAt": "2023-09-07T14:26:31.490Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBGgLl/YlQTkcNChoKAAAADUlIRFIAAAGsAAAAeQEDAAAAX4KHxwAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAHCSURBVHicvdbLccMwDARQeXLIUSWwFJZGlaZSVIKOOWSs+DO2aWEhLDaZ8P4GIJakNNTtfc0Dtfbsur41RpRtHjsue8gua9GY40KGNxkz6GK1bZPGgKPYZtgnxc7GnUTH9QkOTBVdYdxi3aiVGz4IZ9OjBroCRpxOEAI1UNQlMRjcZXjSnC7Dgc6eOz5pXy473uIRu6+K2BI71DPxXsOOJ07tI+G6NEFSXYIY3S5vd+HsKPWAOZ0yD6Bl1PNnWZNYYZRh3Mu+Z9y7bliTWCHV++NAbmzH2I3tWJNY4VXH+I31LLGxnlWJpVp8sVyxJ2v/ynLqlyyX2vb48IiM+Sn5O5YN4MGSh+v5La4aS+5u0Mp1bwn1TwlYoqxl/RKZ2/Yxc8sFzCsXMO9qTIErGnPKRcwpFzJ8N0KGz3jI8OZChhOPWdNY1VjR2KgxGFzMYHAxg8HNIYPBEaxprGqsaGzUGAqOYCg4gqHgCIaCY1jTWNVY0dioMRAcw0BwC8FAcAwDwVGsaaxqrGhs1JgNjmK2HMfMMFm2Oyo0ey+YYH0OGdZNJsVeSawp9rwMSfa4DWl2H2ie3QYqsOtAFXYZqMSG0/oDKucjmI4ZkPgAAAAASUVORK5CYILrY/VV",
+                "origin": [
+                    586,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29489511,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:26:31.490Z",
+            "updatedAt": "2023-09-07T14:26:31.490Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtIRQCzJyAwk++Or9wEptgCfEFcg/f///6U3598FshhLgvyCGRye3UgDclw8XRxDKuYkJzQw/Pv/X77hxf+AAwf+/bcPM7N3/GYvss1GMKda6cZXlpv1ATf+F274OfFGgfsf5krZQ5UMnPzVKxQkrjizMOqFP1CzCw+fADSPwdPVz2WdU0ITAAJpNwY=",
+                "origin": [
+                    317,
+                    32
+                ]
+            }
+        }
+    ]
+}

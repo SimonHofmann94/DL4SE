@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29500429,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:46:08.301Z",
+            "updatedAt": "2023-09-07T14:46:08.301Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBLQHS/olQTkcNChoKAAAADUlIRFIAAABXAAAA/AEDAAAAON2qAgAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAADVSURBVHic7dOxbQMxDEBRjpIRXLownNGi0TiKRmDJgtDFZ/vMX6SRpQMOgVm9QhIpkJTlESG3eHqhFXa4weuhlw0OeOl1mWTdwXUH2yT7Do5JbpPcm3fk7yO96J2BkZkc2ZHO3WwDjgF7p+1g7q3/4P7ZHP/U7eO3fITezTLn3OAKK1xg+dsNDtjhWyr5zlQvK1zS65ObHTZY4ZK+X33aYYMVlnSDHTZYYUk32GGDK1xgSQfssMEKl/RWweqADa6wwpJucMAOG1xhhZNyhS/wGT7BX8lf+CKwsTp0/PEAAAAASUVORK5CYIKmwYcf",
+                "origin": [
+                    0,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29500428,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:46:08.301Z",
+            "updatedAt": "2023-09-07T14:46:08.301Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBIwLc/YlQTkcNChoKAAAADUlIRFIAAADXAAAAxwEDAAAAsGVUbQAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAHLSURBVHiczdhNjoQgEAVgJ5PMLD0CR+FoeDSP4hFcujDS0yLy916ZYGOGXedLJQ9KbLDr9qFsNNYuGcYmI6Yvm40p2G9udjmtLyxU6tJmbyWd9g1soVHCJJVgBtjGo3hDUfy69dAGNvPTUBRrR9gENyY2c28K28yjuAWVDMd0CyoZJregxCyfumyDbLh710aW+tJ6ZmO9qUrTlWYaGKMLo639e+glo629YbTtF9ZXmmpgmtosmqk0So1MytLCNLXlcVP/yPqP2yoa33/PG3+HtDH+HpRsa2J8cz5tq/B/1MIW4T+1hc2yqU/bVG99jd04L9HNWWs3zoNV509667i2mjP01sjY5pTuCM3MYJPuObdMY5PuY5emBJPuhuSBmejV15sRDIcZhXuxMxzGGQ5zGAwzdDzMYTDMYTDMYfDRPgyGOQi20BsK4w210BsI479doFULVoYJVoYJVoYJH5LKMNFHJsmKMJGp3MIHpjJMZEULIyvCTJGZlLaI8jBxWbZqSVkWJinLwqSUhJkzU7wsDpOXxWFyilq4FBbCDKVpXnaGAWW+hajMhxmRuVVbIbkwuGwPQ8r2MKTsHWYj9A4zUdO8rFO8rPtJf74A7DPnDRN9/OoAAAAASUVORK5CYIJdkfey",
+                "origin": [
+                    1178,
+                    0
+                ]
+            }
+        }
+    ]
+}

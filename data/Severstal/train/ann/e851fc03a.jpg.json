@@ -1,0 +1,64 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29499354,
+            "classId": 50137,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:44:08.245Z",
+            "updatedAt": "2023-09-07T14:44:08.245Z",
+            "tags": [],
+            "classTitle": "defect_1",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtLyQKzOyAwkz3oy7gJSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5Ph6ujiGVMwJPbtRsEFBpPlhhdi0vgMafW2LDbuUA4Iq2p6zvnP6LKr5ibmT9ZFQ/+ReroJEaZPk8jgZ7ecPjC/t941KcRWdKThfxPGT2McGPsNDedybHiUeABrM4Onq57LOKaEJALJBN4k=",
+                "origin": [
+                    220,
+                    42
+                ]
+            }
+        },
+        {
+            "id": 29499353,
+            "classId": 50137,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:44:08.245Z",
+            "updatedAt": "2023-09-07T14:44:08.245Z",
+            "tags": [],
+            "classTitle": "defect_1",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtIyQKzAyAwkrau7GIEUW4BPiCuQ/v///9Kb8+8CWYwlQX7BDA7PbqQBOY6eLo4hFXOSExISkhmYrBXS/rCr/PjP3FmlcPDPf/uOdj8TgxPJ6nwOHNU8jxiFAvsdaxyU/jWX/Pn/v72R8UgCgyGDRHnAedOsH/eAhjF4uvq5rHNKaAIAhCUxAg==",
+                "origin": [
+                    290,
+                    85
+                ]
+            }
+        },
+        {
+            "id": 29499352,
+            "classId": 50137,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:44:08.245Z",
+            "updatedAt": "2023-09-07T14:44:08.245Z",
+            "tags": [],
+            "classTitle": "defect_1",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtKiQCzLyAwk67u27gBSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5Gh6ujiGVMxJTkhYAUT/Dx74J9/48+EPZpnTyQe/WRT8/c8u8cOeRz6BgWFhrM3sr93ChkBNDJ6ufi7rnBKaAGAnKx4=",
+                "origin": [
+                    276,
+                    149
+                ]
+            }
+        }
+    ]
+}

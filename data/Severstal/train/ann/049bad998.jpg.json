@@ -1,0 +1,64 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29481521,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:12:06.110Z",
+            "updatedAt": "2023-09-07T14:12:06.110Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtKHGRgYGRiZgSyTXQHuQIotwCfEFUj///9/6c35d4EsxpIgv2AGh2c30oCcQE8Xx5CKOW9PbhR0cBBgOHC+xSug65LGW+/AzukzCjkFnz1LN79rtMVbN3BOgvmz+5LVs9J6DOPPppw5vObYjOK05DOvg33bN0sk+/y6KXTGV2JyKp/OnylqYq5cykDDGTxd/VzWOSU0AQCKuTwp",
+                "origin": [
+                    671,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29481520,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:12:06.109Z",
+            "updatedAt": "2023-09-07T14:12:06.109Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJSQKzDyAwkHZdb2QIptgCfEFcg/f///6U3598FshhLgvyCGRye3UgDciw8XRxDKuYkPwDKMzBzXWxwOaEszDPjiD3PITmnPwdd/xzwu/L/f0N3RUOrxYEDH+S1LzKoSrySlmB4cyY9Y+FXj5NAMxg8Xf1c1jklNAEA110ySw==",
+                "origin": [
+                    84,
+                    111
+                ]
+            }
+        },
+        {
+            "id": 29481519,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:12:06.108Z",
+            "updatedAt": "2023-09-07T14:12:06.108Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtLSQFzFyAwkSzbtegmk2AJ8QlyB9P///5fenH8XyGIsCfILZnB4diMNyDHzdHEMqZiTnPDv/39GZk8Wa7bChlcs9oEuzK4tNjdZmC+22Jp21t/orIoSrpeQ+DfZ3eDE/0QGBofTljnbNztGAk1g8HT1c1nnlNAEADPzLTI=",
+                "origin": [
+                    175,
+                    133
+                ]
+            }
+        }
+    ]
+}

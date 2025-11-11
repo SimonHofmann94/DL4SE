@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29486429,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:21:10.649Z",
+            "updatedAt": "2023-09-07T14:21:10.649Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJaQOzDyAwkFRdsjwdSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5EzydHEMqZjTetGR64gCj8NFEXG93XPnun/0sj344mKVSL+Bt3jSMZUsjjMBC+0yjsZzMBzgrtjLemaLtc6RTnmlpKf+N1hlfhueOOT73Pzx0vAfk1zDmZKMQ97paMw2c101uTr8ub0F645bvL6rJq/aqdC4Q9Pr0QGm/xPkPc67OP84mvmBLZ3BO6rBJ/CBopNATTIf47qPNYyKXpf3sCyZ0gt0HYOnq5/LOqeEJgDpSVad",
+                "origin": [
+                    871,
+                    13
+                ]
+            }
+        },
+        {
+            "id": 29486428,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:21:10.648Z",
+            "updatedAt": "2023-09-07T14:21:10.648Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBiAF3/olQTkcNChoKAAAADUlIRFIAAAC8AAAARAEDAAAAAUbNnAAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEwSURBVHicfZW9scQgDIRhLlBICZRCWy/DpV0pLoHQAYPeiR+fgdVtZOsbWYsA2ZhN7z1UZbMCiJUUx0qKZyUlMF8QRGY+EPjEYYoTwEvwxUNpM9RVeoSu+/Ndx7AoD7QB23z4B2hrpOYjbiDUp8ArsLzrnO0vwGnAA5DM4mYCIF4Bql1rkAaQqQqQqbpyZKoCFBeAOlUBdCsbBU0JgKa479KmorktmqmsmbqUFkrXHQSnYkoANCUdgXFZOM7Q1vezIxBkbcfX23IraYcn/TpuELy1k7tfpxyHqWUHkxtfWsApTe0TTt79t6rv96928aISGjg+NfsYkWad5o++dh6z6BjtL09ArVhNmQbrq4+zewFDtleLvE68fNcaRmcRK/PWsjbUo/YbCAXHjU8KoOntH7QJ4vj3zsY+AAAAAElFTkSuQmCCi62mKg==",
+                "origin": [
+                    1209,
+                    79
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29499968,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:45:15.870Z",
+            "updatedAt": "2023-09-07T14:45:15.870Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBWAGn/olQTkcNChoKAAAADUlIRFIAAAI/AAAAQQEDAAAABNVX7AAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEASURBVHic7ddBDoMgEAVQTBddcgSP4tG4mkfxCC5ZkFKQglYdGcqPi4a/M8GX76hRhGBH2Ym/+CJPu2SshpRNQRSKeSEKnYWCOztfFuJC8jDWjENA8TJ2cim0uQrDLRQgd6ZeneFrwcwrFKA+Hk1+yvuMnEIBUplFjEIByi/jQQ8UJFHQgIIUCDre8B+h3OvIhiQEMqBZewjiOAjyOHoIM2sH9ShIoSCM06B7IdWgBv0lNDToPgj2pRWYL5sJG4/66LOf9Aqo/g9g3TrAoMqZbyBy5mmLJJlQmrkRRC4kTZ1TKhVCtFQKkVIxREnl0D4dCvo8gAhoKQWBfCkQJDr9BsMp14CdJvwCAAAAAElFTkSuQmCC7VqFhw==",
+                "origin": [
+                    1025,
+                    24
+                ]
+            }
+        },
+        {
+            "id": 29499967,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:45:15.870Z",
+            "updatedAt": "2023-09-07T14:45:15.870Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBcQGO/olQTkcNChoKAAAADUlIRFIAAAH2AAAANwEDAAAAxOb6WgAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEZSURBVHicpdbNEYMgEIZhnRw8WoKl2FmkNEuxBI4eGDcSUH5EXb7lYHTGJwOvhkmzNrJBm9ATST3NAj/ZL9BCT3hF5/GK3sMVTw9WDB6rGHmo4hh5pGLigYqZr66Ye1qEvrLi1ddVLPiqikVfUXEoen7FG8+ueOe5FW89s+KDZ1V88peKhayPPqvYFrL2j55MfG+XXTN8UrEvPJVXH1Uc6PpQ3n2INu4Xqt6f0dLZ8L2v1iaTqfFu2R97ojPf8byddxevpdbvEx/CUgBP62iP/xfgi3g/XEgFe+1CatTvJXv7YVBPx29Wgd5M/mQ5Xgp0KKGfhX4Rei30q9Abod/8pgAPqVdCPwt92A2xjvluGMbI8uz/ajfTMz93QkstZmZxkAAAAABJRU5ErkJggscQo6U=",
+                "origin": [
+                    0,
+                    201
+                ]
+            }
+        }
+    ]
+}

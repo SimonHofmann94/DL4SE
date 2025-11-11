@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29490675,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:28:37.616Z",
+            "updatedAt": "2023-09-07T14:28:37.616Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBSQG2/olQTkcNChoKAAAADUlIRFIAAACPAAAATwEDAAAA6EUEZAAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAADxSURBVHicjdRBDsQgCAVQJl106RE8So+mR5ujeASXXRCZNK0W+E6iyxdBSQAi2jL5s59IAteCsKco8kVqjg4RKZaSwDW5TkUSLR+Ba9tN+r+dVFn7Q+q/oRMjvdfioPHfY9D4iKL+kaSIdT3mBUNNlahf2CxdL+wC1yYUHJ26nr/Etp6HkqM2JfFnjTLkWqTvEhUoaEZ1ic4ZRU+8RG1GAQOBKlJBykAN24SXmqkgYRc27FVGmnR0gVG4pyj67C5yMlfVj+3YPTqyL4vkspsdMPbCO5J93tWEFNwemXyk3nWHy/5a1XTHFrInCi5merL/AOW7xRrR5Y/fAAAAAElFTkSuQmCCtQSLwQ==",
+                "origin": [
+                    0,
+                    52
+                ]
+            }
+        },
+        {
+            "id": 29490674,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:28:37.616Z",
+            "updatedAt": "2023-09-07T14:28:37.616Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBLAHT/olQTkcNChoKAAAADUlIRFIAAADsAAAAfwEDAAAA1u+8ugAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAADUSURBVHic7ddBDoMgEAVQmi5ceiSOVo7GUTwCSxeGUSGi0OFjMmmTNvylzziCRmeUqoTIVURTyMzZSEc4fialhS2Z4qtlKzzQNaU+MiVT8AvymCvZ7djErSlmp/MSpYZdTfeveY6bN7xhhFCDMYq7yssd9phJxgazFfGE2Yl4xrxg9iKmBhsRW8y11+weu85fZ9kT69z5N7jx4erc+S9Y9nvv/AEWNYONTrPR5Yq6e4fZYmZnmaw0YIfZYubnqKx04nzq1McQez2VyY7MxHkywI0RqhVQwS/pN+CF6wAAAABJRU5ErkJgghO7iFs=",
+                "origin": [
+                    0,
+                    128
+                ]
+            }
+        }
+    ]
+}

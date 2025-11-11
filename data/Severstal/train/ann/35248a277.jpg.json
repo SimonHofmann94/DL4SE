@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29485097,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:18:49.906Z",
+            "updatedAt": "2023-09-07T14:18:49.906Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwB4gEd/olQTkcNChoKAAAADUlIRFIAAAA7AAAA7wEDAAAAdkQ+yQAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAGKSURBVHicndRBjoQgEAXQIkzCkiMwR5gbcKW5ASznWB7FuYHJLNoFkUGtj9DVdux240sU6xdFJCKbaL9szvMGl/MkMG7wDQb6BIaCkHNUgGGQXZELPCNmxu8KVXAD8oFIpM9hzmEF3AZ6Cv8yFizvYAWMgBbo30lYnvDlDv7GCH+MspOMYYfKQ9igc/TbUAvcBpN5zHoh10OltbOfgnlF2TmatxGW6/vAnrSMnrEOLPXQOEhGwDZIOFp38A32EkGAN2w/LR20gGmxcPE7uAoE+3qYZ0aMCTEqRsQYUX0AIqpHFKUODm35BgmlEirMHRSgkaLCtCn6XIRcBwLAU9/yRCSsIDwC9qRllQT/UoIAmqhQDaYeGpErTIOhh8Uj2/yz6u/s7jx5bLzHTAJ2oyIL1EcOqCOtQ6YKL/bQAAoon7wCegP5PSzXoQQ0pmwAe4Dn7gAPBJ7XgXxgPMdwjngO0fGV1pOAfOfBl2tRmfBJX6cIF+BfgXuGAeB2LDq1MzABvIhMBPhOH/vtH2gPAucmX6xfAAAAAElFTkSuQmCC4xbLww==",
+                "origin": [
+                    1193,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29485096,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:18:49.906Z",
+            "updatedAt": "2023-09-07T14:18:49.906Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtIiQCzOyAwkDS//fQCk2AJ8QlyB9P///5fenH8XyGIsCfILZnB4diMNyHH0dHEMqZije9yRt8FAgOFgbkaRvJDKFU9HSdeopQqM7MfVPsw47sAaVjrXK0KkcmPm+ZMBz/5W/1n+M0DQ2ddwYcdj1oZfin0xHkrXgIYxeLr6uaxzSmgCABIrMqM=",
+                "origin": [
+                    1334,
+                    32
+                ]
+            }
+        }
+    ]
+}
