@@ -17,8 +17,8 @@ model:
 # Loss function configuration
 loss:
   type: "focal_loss"
-  alpha: "dynamic"  # "dynamic" to compute from class frequencies, or float value
-  gamma: 3.0  # Increased from 2.5 - more aggressive focusing on hard examples
+  alpha: [0.375, 0.99, 0.99, 0.375, 0.99]  #dynamic or manual alpha values: [no_defect, defect_1, defect_2, defect_3, defect_4]
+  gamma: 2.5  # Increased from 2.5 - more aggressive focusing on hard examples
   reduction: "mean"
   use_effective_num: false  # Use Class-Balanced Loss (Cui et al., CVPR 2019)
   beta: 0.99  # Hyperparameter for effective number calculation
@@ -27,7 +27,7 @@ loss:
 data:
   img_dir: "data/images"
   ann_dir: "data/annotations"
-  batch_size: 8  # Stable batch size for this GPU
+  batch_size: 24  # Stable batch size for this GPU
   num_workers: 4  # Parallel data loading
   pin_memory: true  # Faster GPU transfers
   image_size: [256, 1600]  # [height, width]
@@ -51,7 +51,7 @@ augmentation:
   defect_blackout:
     enabled: false  # Set to true to enable blackout augmentation
     instance_blackout_prob: 0.5  # Probability of blacking out each defect instance
-    defect_indices_to_blackout: null  # null = all defects [1,2,3,4], or list like [2] for only defect_2
+    defect_indices_to_blackout: [1,2]  # null = all defects [1,2,3,4], or list like [2] for only defect_2
     min_pixels_to_blackout: 15  # Minimum defect size to consider for blackout
     complete_blackout_prob: 0.0  # Probability of blacking out ALL defects (creates clean samples)
     fill_value: 0  # Black pixels

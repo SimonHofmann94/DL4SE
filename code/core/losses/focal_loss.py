@@ -73,9 +73,25 @@ class FocalLoss(BaseLoss):
         # Store alpha configuration
         self.alpha_config = alpha
         
-        # Will be set during first forward pass if alpha is 'dynamic'
-        self.register_buffer('alpha_buffer', None)
-        self.alpha_computed = False
+        # Handle different alpha initialization modes
+        if isinstance(alpha, list):
+            # Manual alpha values provided as list
+            if len(alpha) != num_classes:
+                raise ValueError(
+                    f"Alpha list length ({len(alpha)}) must match num_classes ({num_classes})"
+                )
+            self.register_buffer('alpha_buffer', torch.tensor(alpha, dtype=torch.float32))
+            self.alpha_computed = True
+            logger.info(f"Using manual alpha values: {alpha}")
+        elif isinstance(alpha, (int, float)):
+            # Single alpha value for all classes
+            self.register_buffer('alpha_buffer', torch.tensor([alpha] * num_classes, dtype=torch.float32))
+            self.alpha_computed = True
+            logger.info(f"Using uniform alpha value: {alpha}")
+        else:
+            # Will be set during first forward pass if alpha is 'dynamic'
+            self.register_buffer('alpha_buffer', None)
+            self.alpha_computed = False
     
     def _compute_alpha_from_frequencies(
         self,
@@ -209,6 +225,8 @@ class FocalLoss(BaseLoss):
         if self.alpha_computed and self.alpha_buffer is not None:
             alpha_val = self.alpha_buffer.cpu().numpy().tolist()
         elif isinstance(self.alpha_config, (int, float)):
+            alpha_val = self.alpha_config
+        elif isinstance(self.alpha_config, list):
             alpha_val = self.alpha_config
         
         return {
