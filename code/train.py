@@ -229,13 +229,21 @@ def build_loss(cfg: DictConfig) -> torch.nn.Module:
     logger.info(f"Loss: {cfg.loss.type}")
     logger.info(f"Available losses: {list(loss_registry.list_losses().keys())}")
     
-    loss_fn = loss_registry.get(
-        cfg.loss.type,
-        num_classes=cfg.data.num_classes,
-        alpha=cfg.loss.alpha,
-        gamma=cfg.loss.gamma,
-        reduction=cfg.loss.reduction
-    )
+    # Build loss parameters
+    loss_params = {
+        "num_classes": cfg.data.num_classes,
+        "alpha": cfg.loss.alpha,
+        "gamma": cfg.loss.gamma,
+        "reduction": cfg.loss.reduction
+    }
+    
+    # Add optional Class-Balanced Loss parameters
+    if hasattr(cfg.loss, 'use_effective_num'):
+        loss_params['use_effective_num'] = cfg.loss.use_effective_num
+    if hasattr(cfg.loss, 'beta'):
+        loss_params['beta'] = cfg.loss.beta
+    
+    loss_fn = loss_registry.get(cfg.loss.type, **loss_params)
     
     logger.info(f"Loss configuration: {loss_fn.log_info()}")
     

@@ -4,7 +4,13 @@ Focal Loss implementation with dynamic parameter computation.
 Focal Loss addresses class imbalance by down-weighting easy examples and
 focusing on hard negatives, making it ideal for imbalanced datasets.
 
-Paper: https://arxiv.org/abs/1708.02002
+Two alpha computation methods are supported:
+1. Standard inverse frequency weighting
+2. Class-Balanced Loss using Effective Number of Samples (Cui et al., CVPR 2019)
+
+Papers:
+- Focal Loss: https://arxiv.org/abs/1708.02002
+- Class-Balanced Loss: https://arxiv.org/abs/1901.05555
 """
 
 import torch
@@ -29,15 +35,21 @@ class FocalLoss(BaseLoss):
     Args:
         num_classes: Number of classes
         alpha: Class weighting (float or list). If float, applied uniformly.
-               If None, computed dynamically from class frequencies.
-        gamma: Focusing parameter (default: 2.0)
+               If None or 'dynamic', computed dynamically from class frequencies.
+        gamma: Focusing parameter (default: 2.0). Higher values increase focus on hard examples.
         reduction: 'mean', 'sum', or 'none' (default: 'mean')
         use_logits: If True, input is logits; if False, input is probabilities (default: True)
+        use_effective_num: If True, use Class-Balanced Loss (Cui et al., CVPR 2019).
+                          If False, use standard inverse frequency weighting.
+        beta: Hyperparameter for effective number calculation (default: 0.9999)
+              Typical values: 0.999 (less aggressive), 0.9999 (more aggressive)
     
     Example:
-        >>> loss_fn = FocalLoss(num_classes=4, alpha='dynamic', gamma=2.0)
-        >>> logits = torch.randn(32, 4)  # Model output (B, C)
-        >>> targets = torch.randint(0, 2, (32, 4)).float()  # Binary labels
+        >>> # Use Class-Balanced Loss with gamma=3.0
+        >>> loss_fn = FocalLoss(num_classes=5, alpha='dynamic', gamma=3.0, 
+        ...                     use_effective_num=True, beta=0.9999)
+        >>> logits = torch.randn(32, 5)  # Model output (B, C)
+        >>> targets = torch.randint(0, 2, (32, 5)).float()  # Binary labels
         >>> loss = loss_fn(logits, targets)
     """
     
@@ -47,12 +59,16 @@ class FocalLoss(BaseLoss):
         alpha: Optional[float | str | list] = 'dynamic',
         gamma: float = 2.0,
         reduction: str = 'mean',
-        use_logits: bool = True
+        use_logits: bool = True,
+        use_effective_num: bool = True,
+        beta: float = 0.9999
     ):
         super().__init__(num_classes)
         self.gamma = gamma
         self.reduction = reduction
         self.use_logits = use_logits
+        self.use_effective_num = use_effective_num
+        self.beta = beta
         
         # Store alpha configuration
         self.alpha_config = alpha
@@ -68,8 +84,14 @@ class FocalLoss(BaseLoss):
         """
         Compute alpha weights from class frequencies in targets.
         
-        For highly imbalanced classes, α should be higher for rare classes.
-        Formula: α_c = 1 - (freq_c / total_samples)
+        Two methods available:
+        1. Standard inverse frequency: α_c = 1 - (freq_c / total_samples)
+        2. Class-Balanced Loss using Effective Number (Cui et al., CVPR 2019):
+           α_c = (1 - β) / (1 - β^n_c)
+           Paper: https://arxiv.org/abs/1901.05555
+        
+        The effective number approach provides smoother weighting for highly
+        imbalanced datasets by accounting for overlap in data coverage.
         
         Args:
             targets: Binary targets of shape (B, C)
@@ -77,25 +99,51 @@ class FocalLoss(BaseLoss):
         Returns:
             Alpha weights tensor of shape (C,)
         """
-        # Compute positive ratio per class
+        # Compute positive counts per class
         pos_counts = targets.sum(dim=0)  # (C,)
         total_samples = targets.shape[0]
         
         # Positive ratio per class
         pos_ratio = pos_counts / total_samples  # (C,)
         
-        # Alpha for positive class: higher for rare classes
-        # α_pos = 1 if all samples have this class, else computed based on frequency
-        alpha = (1.0 - pos_ratio)
-        
-        # Clamp to reasonable range [0.01, 0.99]
-        alpha = torch.clamp(alpha, min=0.01, max=0.99)
-        
-        logger.info(
-            f"Computed focal loss alpha from class frequencies:\n"
-            f"  Positive ratios per class: {pos_ratio.cpu().numpy()}\n"
-            f"  Alpha values: {alpha.cpu().numpy()}"
-        )
+        if self.use_effective_num:
+            # Method 2: Class-Balanced Loss (Cui et al., CVPR 2019)
+            # Uses effective number of samples to compute alpha
+            # Formula: E_n = (1 - β^n) / (1 - β)
+            #          α_c = (1 - β) / (1 - β^n_c)
+            
+            # Effective number calculation
+            # For small n_c: E_n ≈ 1
+            # For large n_c: E_n ≈ n_c
+            effective_num = (1.0 - torch.pow(self.beta, pos_counts)) / (1.0 - self.beta)
+            
+            # Alpha is inversely proportional to effective number
+            # Classes with fewer samples get higher alpha
+            alpha = (1.0 - self.beta) / (1.0 - torch.pow(self.beta, pos_counts) + 1e-7)
+            
+            # Normalize to [0, 1] range
+            alpha = alpha / alpha.sum() * self.num_classes
+            
+            logger.info(
+                f"Computed focal loss alpha using Class-Balanced Loss (Cui et al., CVPR 2019):\n"
+                f"  Beta: {self.beta}\n"
+                f"  Positive counts per class: {pos_counts.cpu().numpy()}\n"
+                f"  Effective numbers: {effective_num.cpu().numpy()}\n"
+                f"  Alpha values (normalized): {alpha.cpu().numpy()}"
+            )
+        else:
+            # Method 1: Standard inverse frequency
+            # α_pos = 1 - freq means higher alpha for rare classes
+            alpha = (1.0 - pos_ratio)
+            
+            # Clamp to reasonable range [0.01, 0.99]
+            alpha = torch.clamp(alpha, min=0.01, max=0.99)
+            
+            logger.info(
+                f"Computed focal loss alpha from class frequencies (standard method):\n"
+                f"  Positive ratios per class: {pos_ratio.cpu().numpy()}\n"
+                f"  Alpha values: {alpha.cpu().numpy()}"
+            )
         
         return alpha
     
