@@ -229,10 +229,16 @@ def build_loss(cfg: DictConfig) -> torch.nn.Module:
     logger.info(f"Loss: {cfg.loss.type}")
     logger.info(f"Available losses: {list(loss_registry.list_losses().keys())}")
     
+    # Convert alpha from OmegaConf to native Python type
+    alpha = cfg.loss.alpha
+    if isinstance(alpha, (list, tuple)) or OmegaConf.is_list(alpha):
+        alpha = list(alpha)  # Convert OmegaConf ListConfig to Python list
+        logger.info(f"Converted alpha from config: {alpha}")
+    
     # Build loss parameters
     loss_params = {
         "num_classes": cfg.data.num_classes,
-        "alpha": cfg.loss.alpha,
+        "alpha": alpha,  # Now properly converted
         "gamma": cfg.loss.gamma,
         "reduction": cfg.loss.reduction
     }

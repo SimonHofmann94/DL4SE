@@ -17,7 +17,7 @@ model:
 # Loss function configuration
 loss:
   type: "focal_loss"
-  alpha: [0.375, 0.99, 0.99, 0.375, 0.99]  #dynamic or manual alpha values: [no_defect, defect_1, defect_2, defect_3, defect_4]
+  alpha: [0.375, 0.99, 0.70, 0.375, 0.99]  #dynamic or manual alpha values: [no_defect, defect_1, defect_2, defect_3, defect_4]
   gamma: 2.5  # Increased from 2.5 - more aggressive focusing on hard examples
   reduction: "mean"
   use_effective_num: false  # Use Class-Balanced Loss (Cui et al., CVPR 2019)

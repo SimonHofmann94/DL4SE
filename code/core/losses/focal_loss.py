@@ -74,24 +74,29 @@ class FocalLoss(BaseLoss):
         self.alpha_config = alpha
         
         # Handle different alpha initialization modes
-        if isinstance(alpha, list):
-            # Manual alpha values provided as list
-            if len(alpha) != num_classes:
+        # Check for list-like objects (including OmegaConf ListConfig)
+        if isinstance(alpha, (list, tuple)) or (hasattr(alpha, '__iter__') and not isinstance(alpha, str)):
+            # Manual alpha values provided as list/tuple
+            alpha_list = list(alpha)  # Convert to native list
+            if len(alpha_list) != num_classes:
                 raise ValueError(
-                    f"Alpha list length ({len(alpha)}) must match num_classes ({num_classes})"
+                    f"Alpha list length ({len(alpha_list)}) must match num_classes ({num_classes})"
                 )
-            self.register_buffer('alpha_buffer', torch.tensor(alpha, dtype=torch.float32))
+            self.register_buffer('alpha_buffer', torch.tensor(alpha_list, dtype=torch.float32))
             self.alpha_computed = True
-            logger.info(f"Using manual alpha values: {alpha}")
+            logger.info(f"Using manual alpha values: {alpha_list}")
         elif isinstance(alpha, (int, float)):
             # Single alpha value for all classes
             self.register_buffer('alpha_buffer', torch.tensor([alpha] * num_classes, dtype=torch.float32))
             self.alpha_computed = True
             logger.info(f"Using uniform alpha value: {alpha}")
-        else:
-            # Will be set during first forward pass if alpha is 'dynamic'
+        elif alpha == 'dynamic' or alpha is None:
+            # Will be computed during first forward pass
             self.register_buffer('alpha_buffer', None)
             self.alpha_computed = False
+            logger.info("Using dynamic alpha computation (will be set from class frequencies)")
+        else:
+            raise ValueError(f"Invalid alpha type: {type(alpha)}. Expected float, list, or 'dynamic'")
     
     def _compute_alpha_from_frequencies(
         self,
