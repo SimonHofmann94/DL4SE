@@ -20,8 +20,8 @@ loss:
   alpha: "dynamic"  # "dynamic" to compute from class frequencies, or float value
   gamma: 3.0  # Increased from 2.5 - more aggressive focusing on hard examples
   reduction: "mean"
-  use_effective_num: true  # Use Class-Balanced Loss (Cui et al., CVPR 2019)
-  beta: 0.9999  # Hyperparameter for effective number calculation
+  use_effective_num: false  # Use Class-Balanced Loss (Cui et al., CVPR 2019)
+  beta: 0.99  # Hyperparameter for effective number calculation
 
 # Data configuration
 data:
