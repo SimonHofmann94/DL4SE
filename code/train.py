@@ -330,6 +330,9 @@ def main(cfg: DictConfig) -> None:
     project_root = Path(__file__).parent.parent
     experiment_dir = project_root / cfg.experiment.save_dir
     
+    # Convert OmegaConf to dict for JSON serialization
+    config_dict = OmegaConf.to_container(cfg, resolve=True)
+    
     trainer = Trainer(
         model=model,
         loss_fn=loss_fn,
@@ -340,7 +343,8 @@ def main(cfg: DictConfig) -> None:
         scheduler=None,  # Will be created in train()
         device=device,
         experiment_dir=str(experiment_dir),
-        class_names=cfg.data.class_names
+        class_names=cfg.data.class_names,
+        config=config_dict  # Pass config for saving
     )
     
     # Train
