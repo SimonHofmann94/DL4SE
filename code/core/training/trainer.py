@@ -101,6 +101,12 @@ class Trainer:
             "train_metrics": [],
             "val_metrics": [],
             "test_metrics": [],
+            "test_metrics_standard": [],
+            "test_metrics_optimized": [],
+        }
+        self.threshold_history = {
+            "epoch": [],
+            "thresholds": []
         }
         
         logger.info(f"Trainer initialized. Experiment: {self.experiment_name}")
@@ -168,9 +174,10 @@ class Trainer:
                 log_interval=log_interval
             )
             
-            # Validation phase
+            # Validation phase with threshold optimization every epoch
             val_loss, val_metrics = self._validate_epoch(
-                threshold=threshold
+                threshold=threshold,
+                learn_thresholds=True  # Learn optimal thresholds every epoch
             )
             
             # Record history
@@ -181,6 +188,11 @@ class Trainer:
             self.metrics_history["epoch"].append(epoch + 1)
             self.metrics_history["train_metrics"].append(None)  # Computed on test data
             self.metrics_history["val_metrics"].append(val_metrics)
+            
+            # Record threshold history
+            if self.optimal_thresholds:
+                self.threshold_history["epoch"].append(epoch + 1)
+                self.threshold_history["thresholds"].append(self.optimal_thresholds.copy())
             
             # Log metrics
             self._log_epoch_metrics(epoch + 1, train_loss, val_loss, val_metrics)
@@ -204,15 +216,31 @@ class Trainer:
         logger.info("Training completed!")
         logger.info("="*60)
         
-        # Learn optimal thresholds on validation set before testing
+        # Optimal thresholds are already learned during training
         logger.info("\n" + "="*60)
-        logger.info("Learning optimal per-class thresholds on validation set...")
+        logger.info("Final optimal thresholds (from last validation):")
+        if self.optimal_thresholds:
+            for class_name, thresh in self.optimal_thresholds.items():
+                logger.info(f"  {class_name}: {thresh:.3f}")
         logger.info("="*60)
-        _, _ = self._validate_epoch(threshold=threshold, learn_thresholds=True)
         
-        # Test phase (will use learned thresholds)
-        test_metrics = self._test(threshold=threshold)
-        self.metrics_history["test_metrics"] = [test_metrics]
+        # Test phase - Dual evaluation for transparency
+        logger.info("\n" + "="*60)
+        logger.info("DUAL TEST EVALUATION")
+        logger.info("="*60)
+        
+        # 1. Standard evaluation (fair comparison with other models)
+        test_metrics_standard = self._test_with_standard_thresholds(threshold=0.5)
+        
+        # 2. Optimized evaluation (production performance with learned thresholds)
+        test_metrics_optimized = self._test_with_optimized_thresholds(threshold=threshold)
+        
+        # Store both results
+        self.metrics_history["test_metrics_standard"] = [test_metrics_standard]
+        self.metrics_history["test_metrics_optimized"] = [test_metrics_optimized]
+        
+        # For backwards compatibility, keep the optimized one as main test_metrics
+        self.metrics_history["test_metrics"] = [test_metrics_optimized]
         
         # Save results (including learned thresholds)
         results = self._compile_results(early_stopping.best_epoch)
@@ -310,12 +338,12 @@ class Trainer:
         
         # Learn optimal thresholds if requested
         if learn_thresholds:
-            logger.info("\nLearning optimal per-class thresholds on validation set:")
             self.optimal_thresholds = find_optimal_thresholds(
                 all_logits,
                 all_targets,
                 self.class_names
             )
+            logger.info("✓ Thresholds optimized")
         
         # Get predictions using learned thresholds if available
         probabilities = 1 / (1 + np.exp(-all_logits))  # Sigmoid
@@ -330,33 +358,27 @@ class Trainer:
         avg_loss = total_loss / num_batches
         
         logger.info(f"Val Loss: {avg_loss:.4f}")
+        if self.optimal_thresholds:
+            logger.info(f"Val F1 (macro): {metrics['f1_macro']:.4f} [with optimized thresholds]")
+        else:
+            logger.info(f"Val F1 (macro): {metrics['f1_macro']:.4f} [with threshold={threshold}]")
         logger.info(
-            f"Val F1 (macro): {metrics['f1_macro']:.4f}, "
             f"Precision (macro): {metrics['precision_macro']:.4f}, "
             f"Recall (macro): {metrics['recall_macro']:.4f}"
         )
         
-        # Log detailed per-class metrics
-        log_per_class_metrics(metrics, self.class_names, logger)
+        # Log detailed per-class metrics only occasionally (every 10 epochs) to reduce clutter
+        # Full details will be in the results.json anyway
         
         return avg_loss, metrics
     
-    def _test(self, threshold: float = 0.5) -> Dict[str, float]:
+    def _get_test_predictions(self):
         """
-        Test phase.
-        
-        Args:
-            threshold: Default classification threshold (uses learned thresholds if available)
+        Get test predictions (shared by both evaluation methods).
         
         Returns:
-            Test metrics dictionary
+            Tuple of (probabilities, targets)
         """
-        logger.info("\n" + "="*60)
-        logger.info("Testing on test set...")
-        if self.optimal_thresholds:
-            logger.info("Using learned per-class thresholds")
-        logger.info("="*60)
-        
         self.model.eval()
         
         all_logits = []
@@ -381,7 +403,61 @@ class Trainer:
         # Convert to probabilities
         probabilities = 1 / (1 + np.exp(-all_logits))
         
-        # Compute metrics with learned thresholds
+        return probabilities, all_targets
+
+    def _test_with_standard_thresholds(self, threshold: float = 0.5) -> Dict[str, float]:
+        """
+        Test phase with standard thresholds (fair comparison).
+        
+        Args:
+            threshold: Standard classification threshold (typically 0.5)
+        
+        Returns:
+            Test metrics dictionary
+        """
+        logger.info("📊 Standard Threshold Evaluation (Fair Comparison)")
+        logger.info(f"   Using uniform threshold: {threshold}")
+        
+        probabilities, all_targets = self._get_test_predictions()
+        
+        # Compute metrics with standard thresholds
+        metrics = compute_metrics(
+            probabilities,
+            all_targets,
+            threshold=threshold,
+            class_names=self.class_names,
+            per_class_thresholds=None  # Force standard thresholds
+        )
+        
+        logger.info(
+            f"   Test F1 (macro): {metrics['f1_macro']:.4f}, "
+            f"Precision (macro): {metrics['precision_macro']:.4f}, "
+            f"Recall (macro): {metrics['recall_macro']:.4f}"
+        )
+        
+        return metrics
+
+    def _test_with_optimized_thresholds(self, threshold: float = 0.5) -> Dict[str, float]:
+        """
+        Test phase with optimized thresholds (production performance).
+        
+        Args:
+            threshold: Fallback threshold (used if no learned thresholds available)
+        
+        Returns:
+            Test metrics dictionary
+        """
+        logger.info("🎯 Optimized Threshold Evaluation (Production Performance)")
+        if self.optimal_thresholds:
+            logger.info("   Using learned per-class thresholds (optimized during training):")
+            for class_name, thresh in self.optimal_thresholds.items():
+                logger.info(f"     {class_name}: {thresh:.3f}")
+        else:
+            logger.info(f"   No learned thresholds available, using: {threshold}")
+        
+        probabilities, all_targets = self._get_test_predictions()
+        
+        # Compute metrics with optimized thresholds
         metrics = compute_metrics(
             probabilities,
             all_targets,
@@ -391,7 +467,7 @@ class Trainer:
         )
         
         logger.info(
-            f"Test F1 (macro): {metrics['f1_macro']:.4f}, "
+            f"   Test F1 (macro): {metrics['f1_macro']:.4f}, "
             f"Precision (macro): {metrics['precision_macro']:.4f}, "
             f"Recall (macro): {metrics['recall_macro']:.4f}"
         )
@@ -400,6 +476,13 @@ class Trainer:
         log_per_class_metrics(metrics, self.class_names, logger)
         
         return metrics
+
+    def _test(self, threshold: float = 0.5) -> Dict[str, float]:
+        """
+        Legacy test method (backwards compatibility).
+        Uses optimized thresholds.
+        """
+        return self._test_with_optimized_thresholds(threshold)
     
     def _log_epoch_metrics(
         self,
@@ -427,6 +510,7 @@ class Trainer:
             "loss_params": self.loss_fn.get_params(),
             "best_epoch": best_epoch,
             "optimal_thresholds": self.optimal_thresholds,  # Save learned thresholds
+            "threshold_history": self.threshold_history,  # NEW: Track threshold evolution
             "config": self.config,  # Save full training configuration
             "training_history": self.train_history,
             "metrics_history": self.metrics_history,
@@ -440,8 +524,26 @@ class Trainer:
         if self.metrics_history["val_metrics"]:
             results["best_val_metrics"] = self.metrics_history["val_metrics"][-1]
         
+        # Add both test evaluations for transparency
         if self.metrics_history["test_metrics"]:
-            results["test_metrics"] = self.metrics_history["test_metrics"][0]
+            results["test_metrics"] = self.metrics_history["test_metrics"][0]  # Backwards compatibility (optimized)
+            
+        if "test_metrics_standard" in self.metrics_history and self.metrics_history["test_metrics_standard"]:
+            results["test_metrics_standard"] = self.metrics_history["test_metrics_standard"][0]
+            
+        if "test_metrics_optimized" in self.metrics_history and self.metrics_history["test_metrics_optimized"]:
+            results["test_metrics_optimized"] = self.metrics_history["test_metrics_optimized"][0]
+            
+        # Calculate threshold optimization benefit
+        if ("test_metrics_standard" in results and "test_metrics_optimized" in results):
+            standard_f1 = results["test_metrics_standard"]["f1_macro"]
+            optimized_f1 = results["test_metrics_optimized"]["f1_macro"]
+            results["threshold_optimization_benefit"] = {
+                "f1_macro_improvement": optimized_f1 - standard_f1,
+                "f1_macro_improvement_percent": ((optimized_f1 - standard_f1) / standard_f1 * 100) if standard_f1 > 0 else 0,
+                "standard_f1": standard_f1,
+                "optimized_f1": optimized_f1
+            }
         
         return results
     

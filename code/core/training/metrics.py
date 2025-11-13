@@ -17,7 +17,8 @@ logger = logging.getLogger(__name__)
 def find_optimal_thresholds(
     logits: np.ndarray,
     targets: np.ndarray,
-    class_names: list = None
+    class_names: list = None,
+    verbose: bool = False
 ) -> Dict[str, float]:
     """
     Find optimal threshold per class to maximize F1 score.
@@ -26,6 +27,7 @@ def find_optimal_thresholds(
         logits: Predicted logits (N, C)
         targets: Ground truth labels (N, C)
         class_names: Optional class names
+        verbose: If True, log per-class threshold details
     
     Returns:
         Dictionary mapping class name to optimal threshold
@@ -52,7 +54,8 @@ def find_optimal_thresholds(
                 best_threshold = threshold
         
         optimal_thresholds[class_name] = best_threshold
-        logger.info(f"  {class_name}: threshold={best_threshold:.2f}, F1={best_f1:.4f}")
+        if verbose:
+            logger.info(f"  {class_name}: threshold={best_threshold:.2f}, F1={best_f1:.4f}")
     
     return optimal_thresholds
 
