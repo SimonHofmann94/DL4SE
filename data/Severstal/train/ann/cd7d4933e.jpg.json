@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29497215,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:40:45.813Z",
+            "updatedAt": "2023-09-07T14:40:45.813Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtKVQOzCyAwk51/gAHHYAnxCXIH0////l96cfxfIYiwJ8gtmcHh2Iw3I2ePp4hhSMWfqldO8hxV42BIWyVSlsLglmkj0Bko0KrO3SF9Ru2E/hev+j5YJj92nLFvhkpF18MAFcyGn7oJGVcE6FnXHXofZAR97JW+YTuGcYfpkt0P0B6EJagV5h65uSeZda8hk4/R6afLzX+JdTXnpLS3MQoJMTe+Dr3+Wapy6RkmkpSdfpaVhAQMXX3VSQKG9ksND7dSHhzienexofL7AU+fp82zBVQ3ClyQe7tD+6nL/U/yDD+2JKc/ehuo7RrZMlr/3uXrK+ZTaSJA3GTxd/VzWOSU0AQA6nW0I",
+                "origin": [
+                    1138,
+                    6
+                ]
+            }
+        },
+        {
+            "id": 29497214,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:40:45.813Z",
+            "updatedAt": "2023-09-07T14:40:45.813Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBgQF+/olQTkcNChoKAAAADUlIRFIAAADcAAAAbAEDAAAAO15OtwAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEpSURBVHic3da9DYQwDAVgThRXZgRWuA0YjYyWUTxCSgoUH3D85BLeixSJBnfmQyS2A6JpruMDrq8xEmsngiYQ7BXbS9VCfKs6iJ2qQBxUPVlSYaGGYT8j7MJsirrQLqhR5pIlzy6syclDnHeqcfr6ZbImb43CHrmPbtxi/BWyF2r+ULcdbIUmKPsqId7Ofq0/n5FhvMCxfh6WoTv6cRHC0DdHWXmMDCf22IntNrAmhLy3/9jCHWXzTBDX0rBa6sdSxA6huw/NPQjXFNYEejaFjUzYsEuIz5Ak34sUDcOuDj1pUBGHaoTGUUhrOTrS9xLiocwvEkVTiWxiFAObWAmHaoS2fIyfguNzsP4NrEe6Idp4esC0Hi1Dx1AYeoAh+pXcI/1vXa6hH90vrkZREsApoyoAAAAASUVORK5CYIKLgaIj",
+                "origin": [
+                    463,
+                    142
+                ]
+            }
+        }
+    ]
+}

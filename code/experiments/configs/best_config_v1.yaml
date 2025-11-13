@@ -1,0 +1,106 @@
+# ============================================================================
+# BEST CONFIGURATION V1 - Based on Experiment 20251112_171646
+# ============================================================================
+# Achieved Results:
+#   - Val F1 Macro: 0.863
+#   - Test F1 Macro: 0.907
+#   - defect_2 F1: 0.843 (from 0.00!)
+#   - defect_1 F1: 0.866
+#
+# Key Changes from Baseline:
+#   1. Reduced alpha for defect_2 (0.99 → 0.70) - allows model to predict
+#   2. Enabled Blackout Augmentation - improves generalization
+#   3. Gamma 2.5 - strong focus on hard examples
+#
+# Next Steps to Try:
+#   - Reduce alpha for defect_1 (0.99 → 0.75-0.80) to reduce false positives
+#   - Test with upsampling for further defect_2 improvement
+# ============================================================================
+
+defaults:
+  - override hydra/hydra_logging: none
+  - override hydra/job_logging: none
+
+# Model configuration
+model:
+  name: "convnext_tiny_cbam"
+  num_classes: 5
+  pretrained: true
+  cbam_stages: [3, 4]  # CBAM on later stages for capturing fine-grained features
+
+# Loss function configuration
+loss:
+  type: "focal_loss"
+  alpha: [0.375, 0.99, 0.70, 0.375, 0.99]  # [no_defect, defect_1, defect_2, defect_3, defect_4]
+  # Key insight: defect_2 alpha reduced to 0.70 (was 0.99)
+  # This allows the model to be less afraid of false positives
+  gamma: 2.5  # Strong focusing on hard examples
+  reduction: "mean"
+  use_effective_num: false
+  beta: 0.99
+
+# Data configuration
+data:
+  img_dir: "data/images"
+  ann_dir: "data/annotations"
+  batch_size: 24
+  num_workers: 4
+  pin_memory: true
+  image_size: [256, 1600]
+  num_classes: 5
+  class_names: ["no_defect", "defect_1", "defect_2", "defect_3", "defect_4"]
+  split_strategy: "stratified_70_15_15"
+
+# Augmentation configuration
+augmentation:
+  horizontal_flip: 0.5
+  vertical_flip: 0.5
+  brightness_contrast:
+    brightness: 0.3
+    contrast: 0.3
+  
+  # Defect Blackout - CRITICAL for performance
+  defect_blackout:
+    enabled: true  # ENABLED - key to success!
+    instance_blackout_prob: 0.5
+    defect_indices_to_blackout: [1, 2]  # Focus on problematic classes
+    min_pixels_to_blackout: 15
+    complete_blackout_prob: 0.0
+    fill_value: 0
+    verbose: false
+
+# Training configuration
+training:
+  num_epochs: 100  # Reached best at epoch 91
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  warmup_epochs: 5
+  early_stopping_patience: 15
+  early_stopping_metric: "f1_macro"
+  log_interval: 10
+  threshold: 0.5  # Per-class thresholds learned: defect_1=0.80, defect_2=0.55
+  freeze_backbone: false
+  freeze_early_stages: null
+
+# Optimization
+optimizer:
+  type: "adamw"
+  lr: 0.001
+  weight_decay: 0.0001
+  betas: [0.9, 0.999]
+
+scheduler:
+  type: "cosine"
+  warmup_epochs: 5
+
+# Experiment configuration
+experiment:
+  name: "best_v1_blackout_alpha070"
+  seed: 42
+  save_dir: "code/experiments/results"
+
+hydra:
+  run:
+    dir: code/experiments/results/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  job:
+    chdir: false

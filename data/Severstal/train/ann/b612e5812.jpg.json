@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29495338,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:36:49.385Z",
+            "updatedAt": "2023-09-07T14:36:49.385Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBRQG6/olQTkcNChoKAAAADUlIRFIAAACQAAAAXAEDAAAAu6KuNAAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAADtSURBVHicndTLDcMgDAZgqh5yZISOwmKVyGgehRE4ckBxSQgKfkhY9fGT8xPiyM6d9XW8NiycImLmTa0Sb2oFk7yx1/5QuOkQTYiVN7UqvAnHq4SZ+qsQ6UcoFKnZiZ543WpNoNNnSUknv6Ss00ap/EuVj8NK58d/LQl1cmvazRQpgYmSHKSNshykjYocpELVTGyQh5nYINFGuxykjUAlPkiFkk6RUtYpSPKUirxkkf9hkaviWmxeEg3rK1GhIImGyRXZiYT1rTmHjX3r+WNzGAxyLGgKq4+MsEnuMJjJsaA7rFI5w5i0MODknqAfYeucCFyzkFoAAAAASUVORK5CYIJ54Y1D",
+                "origin": [
+                    1417,
+                    52
+                ]
+            }
+        },
+        {
+            "id": 29495337,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:36:49.384Z",
+            "updatedAt": "2023-09-07T14:36:49.384Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBLgHR/olQTkcNChoKAAAADUlIRFIAAAB7AAAAOwEDAAAAYVFnUAAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAADWSURBVHicbZOxFYQwDEPNu4KSERjlRiOjMUpGoKTwi4+EmFji1PkXimyEyK05C2gySwA2M43z1y4dY17qbOWZZ7vlLlOfzR/aHJzBsEmD4a0Gwmw7gwyW7hpBwUd6NADVdY3gYKAUrLkCqK4zgMzgivYBoAws3MujEci4fwuPIOH+7YoACu+v/8BK0d8XWigXgl1o/8Sgfpi4f2GgUKAeA8DBDXmBjKXrFYogUQ2Ne9nLvWKuCM74L4wYAXj7H9cdf6AA/ARJhraRS57HC4DrtopAppbrB1sicWzTpHcuAAAAAElFTkSuQmCCa7V/JQ==",
+                "origin": [
+                    1440,
+                    167
+                ]
+            }
+        }
+    ]
+}

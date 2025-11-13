@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29482379,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:13:48.631Z",
+            "updatedAt": "2023-09-07T14:13:48.631Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtLWDAyMDIzMQJa54hwtIMUW4BPiCqT///+/9Ob8u0AWY0mQXzCDw7MbaUDOfE8Xx5CKOWcvWvMdVhBgueCqp2HJ5P4wo8Ck75CghuYETgH3Ta5mH9PXpKwOP9uzxWXZFIe3Wl7b7zYeOjD5geHbhj1M5fYcPZK9NdJCUoK9DW3uh+e2/mJjSnZT3t9q19/ixnIoR+DCh4wdizf856iXfbpc4ruE3Kx2KYVKH+kWroPNdgf4DGy+MBx1XvcwPqP+/eLMg3cUw07IblW2dTTTE9B9z5h0I06uUyO4GuhUBk9XP5d1TglNAFbSWf8=",
+                "origin": [
+                    109,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29482378,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:13:48.629Z",
+            "updatedAt": "2023-09-07T14:13:48.629Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBrQFS/olQTkcNChoKAAAADUlIRFIAAAE9AAAA/wEDAAAAuQKT1QAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAFVSURBVHic7dpBbsMgEAXQibrokiNwlDkaPpqPwhFYsrBMnUqVk9SGP9FQmsBfWs+yJfNhFiaykbDYlBIEOV3j97sOM//AUjbodOH2apCTwIs6/MBgwOGnOjTKMJ6vl6chq0OnDAO4yt4NOmXoO4WMwXnAPLQYnAbMhdDNfsBcVgKP4T7hIoDYgNQnjAKIja4DZrN9GWxCGrAIXRu4dgv5n8P0ItAOeJpJAM2AKhAbpWA49wqxUeoVoG8KsVGqTxgEEBulBixCpwpjt5DfBYa20HYJDQJ9FQiNAHUgdGqKIHR+6MNt+MC23ErQtYPcDloATiJo2kGkNJUg0i59eHVQuypBpF1C6NpB1oOrENp20LSD5XZJYbk0Sy1YLk01WG5XPejUYJRCVof276EnsDQEwv2PvcKzZ9rjMm6l22QWZaD7nL7pRI/hQ7f8cicr0x/BI/x98QuXXUQ+tsa1tAAAAABJRU5ErkJggoJ3vGY=",
+                "origin": [
+                    1283,
+                    1
+                ]
+            }
+        }
+    ]
+}

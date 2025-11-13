@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29499460,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:44:24.093Z",
+            "updatedAt": "2023-09-07T14:44:24.093Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBbwGQ/olQTkcNChoKAAAADUlIRFIAAAAzAAAA2gEDAAAAMSToIwAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEXSURBVHicrdI7jsMgEAZgkAtK2q3WN1nnZnA0jsIRKF0gJjbzE8cTLCxl3Xxy4nkxKPWr6qPp7EReGKqGojBVLa0nZ8rCUl2IpLWAOwzvEnGh5vZ7QlzielzQVB9bn1tBHbc5KP+YuAeUvznuAcW5uDfCqSw0UEMl3ifxXYtreRbohMRqOEEDLZz/xQA98jbRboEZrsJ0jGU5HesxtuLjKFhAxgJWLCDxBXkZsZAAPcQFKTCLCyPNuCB9HfJI6SW9qzt6brer4WP40OJ/izoWxzBjfOnyeV8T6if0d3qXTkJzob3pVbw51tYMPadD/6Wqpx7rhXfjRnmq6r7hS2PV3TYM9ANVV2qWgXngOjANjAPDhTye4jafMQmO2LTAUSkAAAAASUVORK5CYIJGbZuV",
+                "origin": [
+                    1275,
+                    30
+                ]
+            }
+        },
+        {
+            "id": 29499459,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:44:24.092Z",
+            "updatedAt": "2023-09-07T14:44:24.092Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJqQOzGyAwkZ7GXbAdSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5DR4ujiGVMwpvbCRt8GAx+Vid9AFBUMns8aLCVt6JgnGLHOQeB6gM8Hp86n3kxs9GXyizrqU2/pe7X51u/nZ9Fav8uvTDHQ3Gn6cMcPDRydv2+67TS+4mqJn1tlU31prf6p8WnTdGWbm8r6jN15nPzlzInDdBSfj+7fu3Mp/K8jm9NtmwyXJHYxbMu/XnZxi5wt0C4Onq5/LOqeEJgD+NVfP",
+                "origin": [
+                    1401,
+                    31
+                ]
+            }
+        }
+    ]
+}

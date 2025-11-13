@@ -1,0 +1,100 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29494114,
+            "classId": 50137,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:34:34.037Z",
+            "updatedAt": "2023-09-07T14:34:34.037Z",
+            "tags": [],
+            "classTitle": "defect_1",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtKKQPyXkRlIclzrqQBSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5Ez3dHEMqZiz9ooj1xEFHtYLU/TSbip/UXt88dXFqilyidP0jvgEB2hkftEWrdl9xEGoM23ZZ4vCtMKX17W/787+FvBvysLLHKuTT+/Wq5Z458Xvobysa3amjNEBpZtLhMxSXexffVP5evuN4KXvRuqr195jPW20lDst4+dJtwMsJ66/v3iBf6axz/uZ78LcxAzDavL/ziu99HFakFrt+d/sTOv3CvPqCFkAncjg6ernss4poQkAaNhiBw==",
+                "origin": [
+                    960,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29494113,
+            "classId": 50137,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:34:34.036Z",
+            "updatedAt": "2023-09-07T14:34:34.036Z",
+            "tags": [],
+            "classTitle": "defect_1",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtIqDAyMDIzMQNbDFjd/IMUW4BPiCqT///+/9Ob8u0AWY0mQXzCDw7MbaUDONE8Xx5CKOWcv7+VtMeBhTQgOTGvpOZTx/KKNl5vHTCWr+A+MQvaN7BP9rteEfpGxP3lFW3hisGHyxWwtvlm+uvtKakJEjGedPLOsLjX4n0/etHW116/e5JmRJyXN03/k80fdCWlFex8mLs+/9vfOPl/XFAdGnuVKnO6X77rtEsuX8Ize+f/8TiYJhsde+w1DpnTZvJw2r9Nqt5qUsn3crilnWWf2/Qa6kMHT1c9lnVNCEwDhH1tt",
+                "origin": [
+                    1340,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29494112,
+            "classId": 50137,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:34:34.036Z",
+            "updatedAt": "2023-09-07T14:34:34.036Z",
+            "tags": [],
+            "classTitle": "defect_1",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtKyQPyGkRlIbpps/wFIsQX4hLgC6f///y+9Of8ukMVYEuQXzODw7EYakDPb08UxpGLO2ksbBQ8r8LAGWC3nUjbocjdebNjltiDkoOMn4Q07FXo8nT5acS7s37Xy+U7mZEZGNkEVbo6KA9aMLhP4dAqYllwTrOOJX7LyrpTHAc6IqW4rIh/NuNDMWsM/a+GUXPuDM79GOx2Lacx+pbdP8by77Zwzv9r8MvNXawZLTvzMfoztr/00SRO2Xw5dTl6m9d2TDm2U2bx440lx74eM9kweuz559TYAncng6ernss4poQkA0Kxaag==",
+                "origin": [
+                    536,
+                    20
+                ]
+            }
+        },
+        {
+            "id": 29494111,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:34:34.035Z",
+            "updatedAt": "2023-09-07T14:34:34.035Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtIiQHySkRlISj5v2A+k2AJ8QlyB9P///5fenH8XyGIsCfILZnB4diMNyBH3dHEMqZiTvOH//8ZEiwe/Am1WfPj/sJmxv/Fr3nfhi4FAJQyern4u65wSmgCzRSVo",
+                "origin": [
+                    1039,
+                    55
+                ]
+            }
+        },
+        {
+            "id": 29494110,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:34:34.034Z",
+            "updatedAt": "2023-09-07T14:34:34.034Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtIiQHyMkRlIvtholAWk2AJ8QlyB9P///5fenH8XyGIsCfILZnB4diMNyFHydHEMqZiT/OPggQMf/ssL/P9vkLCjTqR5o62EvcTHiLoHhgyfDU/vffbF2huomsHT1c9lnVNCEwBktSmP",
+                "origin": [
+                    1016,
+                    58
+                ]
+            }
+        }
+    ]
+}

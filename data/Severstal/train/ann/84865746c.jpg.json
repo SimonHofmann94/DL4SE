@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29491279,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:29:32.101Z",
+            "updatedAt": "2023-09-07T14:29:32.101Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtK6QLyFkRlIWu01BwmwBfiEuALp////L705/y6QxVgS5BfM4PDsRhqQE+Dp4hhSMeftuY28DQY8rIGby1WMotw+cmjGuphtjFn6s/GQkEfM51vKi5w2H24rvuf4eYNLFpMuf10Xi9SPhYcbWR7H3jg/PaBB8dU8tgQH9hOnWFcJfXgkfL1iMdBsBk9XP5d1TglNAOxfO8c=",
+                "origin": [
+                    740,
+                    76
+                ]
+            }
+        },
+        {
+            "id": 29491278,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:29:32.099Z",
+            "updatedAt": "2023-09-07T14:29:32.099Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwB2gEl/olQTkcNChoKAAAADUlIRFIAAACIAAAAkgEDAAAApDkQ7AAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAGCSURBVHicrdbNbYQwEAVgLA4cueZGC6kg7ixrKY25g7RACT4SyWLCsgZm3oOVN4pPq0+r+cMGN822pgaWzygyA7QiID2JFwlWbiLRgBOREQNLMtItYkscFrElLqmgxIe82+RLiQnli+RbZ5N1vSjuIfmZNCyeZFhFd9aROJKGxZ+L/JeEpzJUS6wQHhAPUbXaCsrjL7oNuZRQIbFCxgpJ1+I2mf4k+UpcRGkFpZMfEgHpDymDHkh8hdxIRC3bwhNptUQouYy+15JIMjRRCvJa1r1gJdomSjIrE0mGRutkPhP3uggM7EzmCskkE0mqkJEkkoQKwY2wDoylN5LpkfLjSjTC0yZ04HktUAfO62dWB5563CuphUNR3hpaIkk4Pzha+HBlkokk0SEdSQIe7e3FO2AqNZ9EEosc57bAyUttT5922ZKFXTpbzRFIf8lvEGYLNCrpTX2HBCWdqXgPjrcoD9eYezq8jQ1wHbqnG0E6uFbdN2MAcVjO8mRJPkk+SN6On7/gLxRY8QRihQAAAABJRU5ErkJggv4LwIc=",
+                "origin": [
+                    1120,
+                    99
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29500233,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:45:44.538Z",
+            "updatedAt": "2023-09-07T14:45:44.538Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJKQKzLyAwkP97XDgFSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5KR6ujiGVMwpvbBbsEFBgOVCaUnbBCGN1ksbTLw2sjgzH/+a5+ng1uReUGA/54NzbGt7jcpZn3ebvLjVf0V/nmQu8FK+6vAK1aj6GDXHqW90J1duWTW1P/DiijlnFxxs+p5z9NaRq763DrLtuX+s9KXi+xcWQAsZPF39XNY5JTQBAN0iSeA=",
+                "origin": [
+                    1228,
+                    6
+                ]
+            }
+        },
+        {
+            "id": 29500232,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:45:44.537Z",
+            "updatedAt": "2023-09-07T14:45:44.537Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBpwFY/olQTkcNChoKAAAADUlIRFIAAABzAAAAkAEDAAAAAV3GiQAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAFPSURBVHicvdZBjoUgDABQiAuXHsGjcDS42XAUjsDSBaEjFJB2rCbzM8Pi858BWhohKjW1RdG2MVtKDY54ZTbMQL0C+Nk7s2UGgPBg/eLldHzw2qwzejt91GX87KX+YrrlX5nmuhMOq8sadHmcmesEiy6PawSLA0tX8wZ06cqCenbC9AGaM8YdhhZn2GGcs0d7jHMa+zDGoaOmTgudlzdq2Jm/oK3bDL+1Ifb/bPfq/SOrP/c2M3/o9OJ2HkTH/t4KDu09783/tJrtbmwnq2ePcyk4MR/9nAuOd94uhxf7fg9N25mt7nwVMDMn5oM5jnvy3oEZ78Gr4O7F7WK1JD3ZqdkIPgTvJH3ZoXkT7AX3grsXN44CM2fJmm5Xct9uLzB3HLa3DqIN2a5kN7yT7TVn5is9LGhkDsxXOCyoo56WrwVMkxWdXjYYZypDRpPvmm8VgxysNC2imgAAAABJRU5ErkJggshqvJU=",
+                "origin": [
+                    1272,
+                    106
+                ]
+            }
+        }
+    ]
+}

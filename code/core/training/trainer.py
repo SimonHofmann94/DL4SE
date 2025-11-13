@@ -61,6 +61,7 @@ class Trainer:
         device: torch.device = None,
         experiment_dir: str = "experiments/results",
         class_names: List[str] = None,
+        config: Optional[Dict[str, Any]] = None,
     ):
         self.model = model
         self.loss_fn = loss_fn
@@ -71,6 +72,7 @@ class Trainer:
         self.scheduler = scheduler
         self.device = device or torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.class_names = class_names or [f"class_{i}" for i in range(4)]
+        self.config = config  # Store config for later saving
         
         # Setup experiment directory
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -425,6 +427,7 @@ class Trainer:
             "loss_params": self.loss_fn.get_params(),
             "best_epoch": best_epoch,
             "optimal_thresholds": self.optimal_thresholds,  # Save learned thresholds
+            "config": self.config,  # Save full training configuration
             "training_history": self.train_history,
             "metrics_history": self.metrics_history,
             "device": str(self.device),

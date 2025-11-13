@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29486485,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:21:15.048Z",
+            "updatedAt": "2023-09-07T14:21:15.048Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBbgGR/olQTkcNChoKAAAADUlIRFIAAACvAAAAYwEDAAAA13bC+QAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEWSURBVHicpdVBbsQgDAVQIxbZVMoRcoXegKPB0TgKUi/AkgWCdhLPTO38ydSqN0gvCfaHRWibjyr0rDh17U9PeqtBK2YKgDvepu9tfzYKgP1sktvObuYImIZqwPypuHJWh9lLLte8SM7MK+ZNcrrmgDlKfnF1d54WdiZWRzKuefkPd3yu7Zo3yRVzwYwv5z6f4o65Yi6YE+RHR8ntHQc4yJ+4YM4mTiYmyMPE3cQNczVxMXF+y/EXJxOThYeJu4mbiSvmgjmbOGEmyOPEX5hJZ6fjvaBC0pF6VSHpGNgD5l9kUZyPzlnxbQkyJPEE24n3jxeZnTiclyGJ53IyJAXeUvEHr1Fkf35VIW+YlwLZZ8gOMyVevwG4QJvYSEV51wAAAABJRU5ErkJgggpRnt0=",
+                "origin": [
+                    254,
+                    1
+                ]
+            }
+        },
+        {
+            "id": 29486484,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:21:15.047Z",
+            "updatedAt": "2023-09-07T14:21:15.047Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBMAHP/olQTkcNChoKAAAADUlIRFIAAABtAAAAhQEDAAAAayHk+gAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAADYSURBVHicxdUxDoMwDAVQIwZGjsBReq1u5Gg5So6QMUMUN9Qo9KPiyiBUL/AgMjYIh4joSZ8xZCQDR3ZyMkehl0WchfVqxzXKwqkeWMK92cIjl1yPjUnlsni2cBOHX+yOWWvuLRwsHC2cLHxYOFvI59ndxv403Z94peZrvO8raMS/KiMjkoBFZUYmZEQGlR7pkKSxIDMyIaPKgPRIhyRgQWZkQgakRzokqXedmiqojBbqqeS5/QGlyOGA0uC4qqhct8rpO+U1txEbVUoHbcTuKB20IbqjdPAC5V13AUt1S+EAAAAASUVORK5CYILpNX2r",
+                "origin": [
+                    274,
+                    120
+                ]
+            }
+        }
+    ]
+}

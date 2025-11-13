@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29482753,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:14:35.115Z",
+            "updatedAt": "2023-09-07T14:14:35.115Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBZAGb/olQTkcNChoKAAAADUlIRFIAAAC0AAAAtwEDAAAAgZfm3wAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEMSURBVHiczdhNjsMgDAVgqkrTJUfIUXq0cjSOwhG8ZGHhUdqmDQkvGo+wyFuw+DaWEYgf597xIsJul0nmxC37J0ve8FXeCRVfFhaqXL5Z833lq8p+xZL2NTde8bewrz0rnYEXpQvyoPSo9ASclJ6BLxM0/dELcNF6BE7AGbggj8AJOAMX5BE4AWfgpZOLtYdBHg/83sHTICdjz4Ocjb2czOXAHyM8nMzjyTwZOxl7NnbeXsf+6cXYpZcHY4/Gnk7njyFOap+A34BfgLcPANpfuBe/Am8WQJ6UHpUegDvsrb4KcFZ6VjopPRl77OSho7cWuuvj5dhD23m3l14+T4av/Pmg+pmHV3fsPv8iv0iPzZtZfRVMAAAAAElFTkSuQmCCFguexA==",
+                "origin": [
+                    1,
+                    73
+                ]
+            }
+        },
+        {
+            "id": 29482752,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:14:35.114Z",
+            "updatedAt": "2023-09-07T14:14:35.114Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtLNQGzGyAwk74XseAyk2AJ8QlyB9P///5fenH8XyGIsCfILZnB4diMNyNni6eIYUjGn9/JG3iMKPKwBi0Q0JRUXp2wxkFpswKTKeohdkevZ/znvYuwY/zEl96xKWJDDEqHS+GZSeoTrKR32U2pb1SxnW9zd2VihKu5xQNVISU825MjfaeqPqg5zlCzI+TSF7/rpl+e0FjXJFV4XCt0heNFvkucpeaUbr7o4Hnkyeap4qsxcsuL3b7VDjzxsPCsiiy9Z7j+6QGSSzySPR3+OrRfysOk0rjDpWSjl631pmfGWvx+evzp85YR8gXPq54MrVpoC3c/g6ernss4poQkAdmJrKw==",
+                "origin": [
+                    359,
+                    83
+                ]
+            }
+        }
+    ]
+}

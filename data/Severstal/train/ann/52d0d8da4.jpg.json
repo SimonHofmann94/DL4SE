@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29487291,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:22:39.875Z",
+            "updatedAt": "2023-09-07T14:22:39.875Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBcgGN/olQTkcNChoKAAAADUlIRFIAAACbAAAATgEDAAAADVz2UwAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEaSURBVHictdVBjsMgDAVQIqRh2SPkKBwNjsZROEKWXUR4+CHECXYlqtGwoi/Ehjb9MWYcP0LqCFGaoyTRUxZmid7KQtqVhVRGXDUMCi6EMeBLQ69gu3tA1zCiULxv6ERP8XH38ZH6yQKjbbPUb8aU53TDoOAirKKTmM/jDij7VPQayua1kbSvUKkZ/wG1b46MdsxpLN/gKnCfxvffcDPK7z6PeRqTUZ66eYzTaD6gncLyCcUDWjgNeOycG22sHW9FNyxoqcaY3YVcNAG3R3TUU6NUvkcUzoL/eXokD3ZIVyr1/jse9h5/PRw2NL0iNVRxR4uVw9djVUCLV98Rrhe0i8DUsU2DOa+cezqq4/1gOXvtdXmRIV/HUfIXuk0NK9I57KMAAAAASUVORK5CYIJS/aC8",
+                "origin": [
+                    260,
+                    29
+                ]
+            }
+        },
+        {
+            "id": 29487290,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:22:39.874Z",
+            "updatedAt": "2023-09-07T14:22:39.874Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtLJQGzHyAwkWZ+a/wdSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5OzzdHEMqZjTe/k072EFAZYLW2seeHDqHV368JJGq5DFr4YbC56aL/YItHia+bHHsMsjPq7grqSoyFKuw8GibX6FFZp8+UcTAyTk2HqtU14raZ6aqBck4fUj4rqjlWffk+VKYi/s/KKnvuISffK+KX6i8ZJL1vtFJmmqBJ74nM8h/9XxJmOYo5qrUOx5b6+Cx8r1q7i0+Fnv3AhlMTXnesbvesvSuepwy97I2KKIhPupojfervVYfSNjIeuTj/MvOD3cKLa5vp4hIrzlSc2Wr4+APmHwdPVzWeeU0AQA7ohtWA==",
+                "origin": [
+                    993,
+                    153
+                ]
+            }
+        }
+    ]
+}

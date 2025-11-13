@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29489025,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:25:43.606Z",
+            "updatedAt": "2023-09-07T14:25:43.606Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBfwGA/olQTkcNChoKAAAADUlIRFIAAAHdAAAAgAEDAAAAdJQhsAAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEnSURBVHic7dc7EoMgEADQTSzShSN4k3g0ORpH4QiUFg6kUAmRj7LMkJDsdgoPF1hmEGAfzJwNaU1/2thQFo/5eNpsl29fX2YIbOeMsEasdsBgvtgbxq74grLmIGmVWgudXun0Hs6ppLcaGFPtkUZui28IdxDRpGf3rPSxD4fnJAEOtI6Nqr1z6mUuY4Mqz+4XhsfGNAEKbvE7eXlYhPG2NpP78ixe6l+mJmPc/d0F85tcLFgKB8JiBUvBZNgV6y2zwB4n4m2a2Vg6D2xX1FlRiqfjXj+HFeFauC/EknArWBBuBXPCf4HRlnBlnHV7/BY8/CXGX7cJV8b4vwTClbEi3AqWhFvB4kN4JFwVc8KtYLxtFQ8lmJXgrgRDwV8CwKME30vwNav3E3lNoTDFluZYAAAAAElFTkSuQmCCuPqkBw==",
+                "origin": [
+                    605,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29489024,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:25:43.605Z",
+            "updatedAt": "2023-09-07T14:25:43.605Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBWAGn/olQTkcNChoKAAAADUlIRFIAAAKZAAAALQEDAAAA36XiWwAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEASURBVHicrdZBEoMgDAVQOl10yRE4ikeDo3kUj+DSRad2qmilhKQk/2/VJ+aPDM7x8SuVl/AUnztp5iQlypl75m5zkNEtzw6THqhtHOxAW5kEVGNKK9aaDKr6dgH1enNtmcFgttBoMRuoiaRRQ0VN1FtNAg1ms94Xo9msUTtZoeaKCNRDzBINGLPYsSPIvKA3FHlBMRWVqAeaBxqQZkYjc8fYP5hFqGh76aBAmWdGVYsL9/H1seM/kJtoqkzmHUv7EnNXX+ie5GV2o7ZlOqpa2zGZRpPddI+SnADkz14yQ8gC7Tlk8wmnCSO/v34CmhmdkOT+689Y8oPi+jmD7OfIG8LWBAUNL47EAAAAAElFTkSuQmCCvnST4Q==",
+                "origin": [
+                    935,
+                    0
+                ]
+            }
+        }
+    ]
+}

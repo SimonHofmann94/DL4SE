@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29494321,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:34:52.030Z",
+            "updatedAt": "2023-09-07T14:34:52.030Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBlAJr/YlQTkcNChoKAAAADUlIRFIAAAE/AAAAsgEDAAAADjFaWgAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAI8SURBVHicxdhBkqwgDAZgrV645AjcZDwaHI2jcASXLCx5zxYQaSA/U+maLLu/ycQgQXuaUvxMYKwbCBUMHQg9N5z9zgxf7HDxx19B4T0zlANQQ3Blh2oAGl64DkDLC+UA3Hih+AbEJsDyDYht7Nc3ILaxZ3Y4DUBwAsBQDUDNC0eGj+GFchj+v6ru34QJMPsrbKtCJ95fLj7G9v58KW5SEbJIf4cLdeRVvEIS5fPYQoIM+nroq2B9F9iAu3xC0XAxYpGScBEqyl0tfZEsdBRwOHQo3NnhwQ49DPUIVAg0KLTscGOHDoU7OzxQ6PmhZocGhZYdbu2J90voULizwwOFnh9qHEoMGvKMCWGz05SAyPHhz8WeaXSGwyE2Sc/FVihcIXgAh3CEAoVYxw/swH5fDNbIHT2S+Gfu3nk6+oAShQKFUMcd+IiUniUxiPxvBz7GBQikdOiTYYB0yvgSSqbcJjBlhGTKBKmUCVIpb/iRsvk2eaVsfZtFSAm8OquPcuqR3ZamC9f8SjquGBjtUkW7c8+oNLlaan0JqUvplNreskWpsgmLUjvuUarow7tURcAo6enjur3J4rp24Fyw0KX42CLaXRAZpBos0SPLcsYBtjv2W5LQYSud7jV6jFp0qcMtSfcn3ruKgrq/s+5AdswZaVQKAqadQPTHpr3V689zQredebh2f8qfV9cWLFxzbUwJG1VWf9etlVlztTp1HZYL2fnBVJD1xciW0vZctpat8lLMVHl3UOXdoWz143/41RJPVw6x7AAAAABJRU5ErkJggksOLtQ=",
+                "origin": [
+                    762,
+                    73
+                ]
+            }
+        },
+        {
+            "id": 29494320,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:34:52.030Z",
+            "updatedAt": "2023-09-07T14:34:52.030Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtKWQKzPyAwkkyM/OAAptgCfEFcg/f///6U3598FshhLgvyCGRye3UgDcvo9XRxDKubEXtgo2KAgwnzhfGCAFdNiC6meZxo9CZ4HJSfOD8hwfreIXz9NrPd8oOSpp+kOyc2zea2kecwqwiwY1xj4h9SL7wgxbWV9KmllX67RGMCyUEPDQYBF1HH5Ah0NbisWVcfAAIEth3R3dcstku+8sfDfy7/Xmw8XSDYu07bblakdb1G8yv/Owel+d0ovXa5mTJBcEVUjZrUc6DQGT1c/l3VOCU0AbuBP3w==",
+                "origin": [
+                    643,
+                    150
+                ]
+            }
+        }
+    ]
+}

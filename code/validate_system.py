@@ -83,7 +83,7 @@ def test_model_instantiation():
         from core.models.registry import get_registry
         
         registry = get_registry()
-        model = registry.get("convnext_tiny_cbam", num_classes=4, pretrained=False)
+        model = registry.get("convnext_tiny_cbam", num_classes=5, pretrained=False)
         
         logger.info(f"✓ Model instantiated: {type(model).__name__}")
         
@@ -109,11 +109,11 @@ def test_loss_instantiation():
         registry = get_registry()
         
         # Test focal loss
-        loss_fn = registry.get("focal_loss", num_classes=4, alpha="dynamic", gamma=2.0)
+        loss_fn = registry.get("focal_loss", num_classes=5, alpha="dynamic", gamma=2.0)
         logger.info(f"✓ Focal loss instantiated: {loss_fn.get_name()}")
         
         # Test BCE loss
-        loss_fn = registry.get("bce_with_logits", num_classes=4)
+        loss_fn = registry.get("bce_with_logits", num_classes=5)
         logger.info(f"✓ BCE loss instantiated: {loss_fn.get_name()}")
         
         return True
@@ -157,9 +157,9 @@ def test_stratified_splitting():
         import numpy as np
         from core.data import StratifiedSplitter
         
-        # Create synthetic data
+        # Create synthetic data with 5 classes (no_defect + 4 defects)
         np.random.seed(42)
-        labels = np.random.rand(100, 4) > np.array([0.3, 0.7, 0.2, 0.85])
+        labels = np.random.rand(100, 5) > np.array([0.5, 0.3, 0.7, 0.2, 0.85])
         
         splitter = StratifiedSplitter(random_state=42)
         train_idx, val_idx, test_idx = splitter.split(

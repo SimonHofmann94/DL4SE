@@ -1,0 +1,100 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29481344,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:11:40.951Z",
+            "updatedAt": "2023-09-07T14:11:40.951Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtIvgFiVkRlIFgmaBwIptgCfEFcg/f///6U3598FshhLgvyCGRye3UgDcpZ7ujiGVMxpnXKat8WAx6XX4skO1QCu3rUsS5dOmTJBmb1FPMxzyvmKGa8nq+sbOtnNEmJZEmDLEMt1dXLQXrZdWXPnBn2dUnY52t3f63b19w2i8ivcXh/yyFmU5Oz44uPpbrM6wYT0zqVrlkVU/9L4pmKvIyQ8c2bEVd7Ml8fUz395cultpvmvfavfzS1z9wne/nDq7uZG8U3cJ09vW7F48//Q6sl+OV9+at5YXL5Pyb76UYHVzsD/9UAnM3i6+rmsc0poAgBBp2lx",
+                "origin": [
+                    555,
+                    200
+                ]
+            }
+        },
+        {
+            "id": 29481343,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:11:40.950Z",
+            "updatedAt": "2023-09-07T14:11:40.950Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtKfgFiXkRlIrju3RBZIsQX4hLgC6f///y+9Of8ukMVYEuQXzODw7EYakHPS08UxpGJO65TdoocMeFyfPm6aJGjU5a68uFLEbcGSBwtqejr/FVXnz1mers7wlfNhlgSXqGD1jwodhWOHkjmyD8UufLhVZ5/AP9Mfcwv+qMjc77ovcT027FyosGuB5Ytz/2V7vj46NHEmt9ttpwu+nom+LHdDvLsmNFU1C/RsftBU1yxgkr7dUaxSr2qOG1PdPLHl7Ld8H666xOVw3ID5gqGN3fECpgN7rsUx/Kjdntews/H88Sl1DYKGD56zCZ7/5+Peq7ie8755R6WnhQ6nfi1z6eOpRc+EDrkDPcXg6ernss4poQkAC8d10A==",
+                "origin": [
+                    832,
+                    202
+                ]
+            }
+        },
+        {
+            "id": 29481342,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:11:40.949Z",
+            "updatedAt": "2023-09-07T14:11:40.949Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtKMIMzIDCRVb4edAlJsAT4hrkD6////S2/OvwuSLgnyC2ZweHYjDcjh8nRxDKmYk5wBZDcxNJafLdoGZDF4uvq5rHNKaAIAM6gZbg==",
+                "origin": [
+                    1127,
+                    206
+                ]
+            }
+        },
+        {
+            "id": 29481341,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:11:40.948Z",
+            "updatedAt": "2023-09-07T14:11:40.948Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtKsQMzIyAwkdQy+bQBSbAE+Ia5A+v///0tvzr8Lki4J8gtmcHh2Iw3I4fJ0cQypmJP8g5GB4RfDz/BU8ZNAUQZPVz+XdU4JTQA+UhoF",
+                "origin": [
+                    1129,
+                    207
+                ]
+            }
+        },
+        {
+            "id": 29481340,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:11:40.948Z",
+            "updatedAt": "2023-09-07T14:11:40.948Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJzgFiBkRlI3q1rBpIMbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5HR6ujiGVMzJnXCQt8GAhzn268HNyiWsag0XE0zcXnLUfnJg0QjY2vnXJnKbcALTxDfTKiemJAhMDD38s215Z03q3P1ZPhkJa0t01zzk3twUtXvdnbU/grf1ue1dnXFh49tdVy6bWzRXnK2fX9rexlyt8kZ6/9bVbedkvoa+XLjUi183lMWNzbY5QoKHx4rNMC54zupPy8q7WkCO9nT1c1nnlNAEALmAV98=",
+                "origin": [
+                    1074,
+                    209
+                ]
+            }
+        }
+    ]
+}

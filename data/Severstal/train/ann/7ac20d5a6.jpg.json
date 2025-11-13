@@ -1,0 +1,64 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29490519,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:28:19.398Z",
+            "updatedAt": "2023-09-07T14:28:19.398Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBjgFx/olQTkcNChoKAAAADUlIRFIAAADPAAAATwEDAAAAdv8DxAAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAE2SURBVHicvdVNrgIhDABgiAuXcwSPwsVeAu9mHIUjsMSE0OeUIr81L2jswsz4AS11ZIS4GpHjBlAuxQ9+QqBbDQCOLhONzbcXOMPTIJxEt+KAHA6nm0wRSUEbNhMuLDvBpECzrz15IpvLaSM2JfepMImm2bonoK8iLdyGyZSmAjG/zkMuIzkiN9aO+bGy8GzTMwJRGreFpalcjxoplS44zdJ9lHPPU5JKU2klDE923us/aNGhSlNfS3iewhbFLUpfpL0Kd2l62N+l6Y9VIrwk/WlSn6YbQ/4lHVvE9dfNh2RLTPlWiMWB19BySVNfDAytHqvyellUUuic9ttJKvTo5HAYVJJhWDaKLg6e2hVDT5Kndut+IMXTwVNThxtI8tTUYUeqP91M5bmMC6nvwUVIVh75cpP+AG59Ed1e7PGrAAAAAElFTkSuQmCCtMaqbw==",
+                "origin": [
+                    72,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29490518,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:28:19.397Z",
+            "updatedAt": "2023-09-07T14:28:19.397Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJwBOQTG+4lQTkcNChoKAAAADUlIRFIAAAFBAAABAAEDAAAAF8RWuwAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAPhSURBVHicxdpRktsgDADQePzh/vkIXKEH6NRHg5m9GEfhBuUzHxnTZBxAEljSMk7rn2y8zwYJLTbM3m7lSCndVMeaMn0IMqU3tSnIt3zRReqFfcv0uiRyckvg2NWS7alBkgt/RTI5tYzncsGSiWnGkomJyvOYJiKZcaLSqaU/lVYd0kZk5OQfKO+n0qT0pUvT+hwXQf48PuZne7CvnfH8dXxMz2gNn3qbPx0uE9dKf3z+JkPqG5kz9+OG0x9aCaKEIcVWgr6vXOon2CMYUpPQCV4NQ2oSOqFzXEJnlDoYkuvIUL4ZRi4oTBiS78jaUfgnGjoSNMSkfsWXg/GkqV/xSRA8Tb3BWQbjSVNvcEZg8F1ZOjqdy43EeZ76DcS54JCItCDO5YHG0/fk/g4nwJBCTx69n59XzKcS9ml+tVhl7Er/llGU4S130E888BM8Sx4Lj658wC9dmW+zd+TelUkvXStxiZRQPUgEL0MrcetrPh3bLJ3Ie9v4oy9TbB6yWBr6a3DcPyAjktslMiBpL5H+v0o3KBlI5rpL5P4B+RiV9lyS59F2hYxYGrVcO+SrG9HSwvx+t4uyzCUOSfp2fvxNbOWnejQTx17jJCFtRPoaJwmpOw+vvZC6K6O1FxIpkjvMSCASdSBCGamEHQhQtu/fIKkenui8f9siHbqUhgTrBDfShFRj2vH3NqQyUg8se4sPi24y4SbwYWDHSm/akHJY/v0zTm/vto7ITkjkyFLaSahDwa7kkZS3M4p0kswjwSxQqQxqGSVpsjxfoFIpJrRIMaFrlmJCq3Rq6QVZJ8ugllKa6gwgpalKKU1gqtJLJ9AqvVoGQdoio1pKCS2lLCa0SimhpUDFhALpeFnLTkookIGX4Gker5LgESWkfhqRun3b70lpOO2AlAZ+U0t9iXy4mAR5votAj/NdBEZGXk4jUpobRqRUdlYta4lIZaeXoEQuk6BEnPqegqwRSWVn1bJCqezUclJLuByKrFzUEiReKFCjliDxQoHaIckXaNJKvLzj5PwBiVt3l0i8tvTXSJh5vkD1coMyXiMNlGyB6uUKJVugeom2P9gCxRslnBwtUMfI0QL1XPODMnDSQhmvkRuUFxUTkvpi0pfIPy+mz89hHMTDqZb802NTSzic/LNLL1e1hMPJP431Uv9+oZf6txu9HHsL87y0H5Bble4qaUYkD2HZXSaXASmtPPTbUSMbV9JaSi9vA1Lc27Tfl1GSpeyCWnpJlrJzWinvaeeyk/fJsxSTVMouqmUQZS47r5ZOlJM2SfjfN/jDKJOUgw8KeXRUAY+q1zR+1J0Kvkbe6eRcxucvglYriwI6T5AAAAAASUVORK5CYILUtPi5",
+                "origin": [
+                    314,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29490517,
+            "classId": 50140,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:28:19.397Z",
+            "updatedAt": "2023-09-07T14:28:19.397Z",
+            "tags": [],
+            "classTitle": "defect_4",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJpQBzPyAwkFVIUXIAUW4BPiCuQ/v///9Kb8+8CWYwlQX7BDA7PboDUfvB0cQypmDP3ym7eFgMBlguuLC0mBUJLA6T0zi7dwdLOp1O84d9Zhbml5dIfmc7/anddZ3Vu95wM33S91VFde7K0uy61xy5ddaGx+LJtQS7X9LJLnbM8uTNVc2MF0xZZBQpnquku6d3SzGT2w/Gfv2XMIedv2TMbnyxs3lKucuuVy3GBlx1KsvE1cs/cK70kT/KmHG+KnN34ZLOQ5qQffdYHbTer/Ok02aQ9ienkRJ2TC0w2nVUFMifLdNbXOp93qlNhuX2VW7grLCMg+dTjoKQ1CT2CPSsvzLhisv3rlcaFr1+8/ZTWcO2ezfljZb4X/vC1soWvcN376rh0ZFeubeJUhw9AvzN4uvq5rHNKaAIAV32KcQ==",
+                "origin": [
+                    565,
+                    0
+                ]
+            }
+        }
+    ]
+}

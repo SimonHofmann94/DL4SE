@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29498307,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:42:21.700Z",
+            "updatedAt": "2023-09-07T14:42:21.700Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBZwGY/olQTkcNChoKAAAADUlIRFIAAACoAAAAWAEDAAAAWxcu7gAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEPSURBVHicrdSxjcQgFEVRLAcOXQKlUJqnNEqhBEIHCC+MB+YDF628WhKkI0vP74NQSunrs4IS67j6FZVaBsy6oe6o+oGaUS/6sayAM4USSVdUqJb+jHVH1ajmgR6gAauFybeslBbwfwN2OydK0zlxvjOlE/J4mh7vw1QNqs570J3uabPtOFzWdDHb4kk3p0Dv9c9qi25/1dcDrc+BPKiIGh7oiep/UXktHKpFrdWaKyTUQGH5KEWh3/HI53JF/cadUmucl6pRa5yTWuOs1Br3avRALXENlqsWW12hRI1znR4QVuI6vONCr+swhbyWsW+JGzCPOI66jx3Ue8Ru1GXscMcBKjN0eMd50s2SLp/9B1ULf+piGolwAAAAAElFTkSuQmCC/o2d8w==",
+                "origin": [
+                    1012,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29498306,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:42:21.700Z",
+            "updatedAt": "2023-09-07T14:42:21.700Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBPgHB/olQTkcNChoKAAAADUlIRFIAAABUAAAAZgEDAAAAbxckJAAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAADmSURBVHicjdSxEYQgEAVQPAJDS6AUSsPSKIUSCAkc9jxh+Svnzmj0Aj9+lNUY8zG41l04wVuBXRUmBDwhEKgII0A0AstpDtjTRZgDKyGwEQKXC1dAwBMCzbFXmJ24zuTM1SYXrjb5mL3+u47Kd9OoP3mf7Lvj5PDgNLZyd1ZcFB+K6wuT5l1xVJxeOCsuig/FVXcQm5H2YjPu0XF867sTn43LVmxAehHZxxdalEOA898Oq+MnwZijPkgrbuluc2Rxe3Oftavc0WywTHPuDoQh98Qj2Lx3u7H85fGz2LD8r1CEB41lfgFP/rlMBH4f7wAAAABJRU5ErkJggmXOhXE=",
+                "origin": [
+                    898,
+                    7
+                ]
+            }
+        }
+    ]
+}

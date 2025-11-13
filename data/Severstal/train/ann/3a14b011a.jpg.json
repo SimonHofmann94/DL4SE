@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29485531,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:19:33.535Z",
+            "updatedAt": "2023-09-07T14:19:33.535Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJVQHyUkRlILuQuYQdSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EGZJt7ujiGVMzZeu1g7hEFgdaHG4s+XFTN0YyepdkbtIylT0ZAJVK6pd77JJ/inWfWew5uOqis9ElH1WP/t097g1ZPL1rDJq/+g+s1Z1SitWJYxbwJ6313XYm6fmWp4w6zzJXRzcZfLy7YkT15VhSDN/st+6jm3gumlmXf/ki7WKtYP+EMYDtw8+Btx/tNf905yjrKPIQVbi/kaZjNcI8vqz2h3YJxkuwm2VMCMa/Xiyez2TOy3br34JtO2Qlhhb/sRxRv6Bt8+Hg/4cGZuwkPVvzn47v+g+NDuAFDJdOS7Q8uOqtoHBS2WKjiBKJZJnBMXMDiX3H1bsFUju2S/pzzFBp8OlhUK5oYbv3ZpfTZjnn9iRyI0JYzVhu4FISVFAWmPOBg8pDVyShqELI5yLirV34CR+MF88rY6X1AlS/M9ebXyEt6zTC5IQMMTwZPVz+XdU4JTQDKwJ8D",
+                "origin": [
+                    340,
+                    1
+                ]
+            }
+        },
+        {
+            "id": 29485530,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:19:33.534Z",
+            "updatedAt": "2023-09-07T14:19:33.534Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJYmBgPA9kuzEyA8kJdb1ngBRbgE+IK5D+////0pvz7wJZjCVBfsEMDs9upIGEPV0cQyrmHL1+ULDJQKD1oYGczbKWKZMuOWVOc+KUs7WIdHUQZD75T1K9+n9b6ucEs2MSl+/yrFVgnhLmUqXi768peNEgSHH965RVjv6pK+N8Dzt9Xf97WdWbp6v1uF6lRIf7dUdv14y69quy/1m0/aKZ1/yPl6wMCdhttGud9fLgo6EdX01MFs4Lvt4S5Wfs+UdYl6ew65LKtUCpRxPb1K4Uv5oVcFrTJ0m1VbHvT3mUZ2JHPFx1pFC2JnfhE2tH3VTFeearuLzUvt58fEV9Sxyj7PJT/hm7K9j8RNPnRJR7t8+9M0V3eerhe3fPMy//mS4ek/EtLa6u93dm451pzy938/+/WNSyzNU5HhgUDJ6ufi7rnBKaAOjUkA8=",
+                "origin": [
+                    846,
+                    18
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29495554,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:37:16.572Z",
+            "updatedAt": "2023-09-07T14:37:16.572Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBLwHQ/olQTkcNChoKAAAADUlIRFIAAAEJAAAAWAEDAAAA3AOQwQAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAADXSURBVHic7dWxDcMgEIXhs1K4ZARG8UrZAEZjFEagdIFMYkeKrAjffwVNlLwO8QnBEwIRkaYlP4FMQ8iNyczEqaQYiWeyMAlDiCoOopdrJXr/bcX+D+KGEM9kYRKGEF20iuUaCfS/E+h/J24I8UwWJgHIZiIgfpO0P+knfhfhE1UmhUliYnrqiBQmiUlEsvHPuDLJTCKSYys6WYEUCVknrxU0UoXIJkgEiSCJPZLOH0aSC/IeZ+mSKNcxEN85wmcCk+mzzE4ck72QCkQMZD5djqt4JnJX5h5+116CoI/H7QAAAABJRU5ErkJggkCZdJ4=",
+                "origin": [
+                    736,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29495553,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:37:16.572Z",
+            "updatedAt": "2023-09-07T14:37:16.572Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBeQGG/olQTkcNChoKAAAADUlIRFIAAAEFAAAAgwEDAAAAvsacowAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEhSURBVHic7dZNcoMwDAVgOl1kyRE4So6Gjuaj+AhaesHIATtNG6Z+zzOozSK8rT5+ZJBhGBoZs7ZKaz7zloTLa4zU17B6zrIvf+Rd4lN52pfXaPvgex7NNOo/mmmKTK7x3QwQkQqlIv22jk8xKjIXQkVt5gKEUpGoMCpqMyMSQkWkQqlIrTf0EaMicyFUbM1coVAqEhVGxdbMjIVQEalQKhIa7K9zHBaxQ4DBLglUiIPAg90ljIqlR8DBLg+OCHUQkQx2jwhUiINgW1AREwRGxeIgkoPQLnGFgm+FXAQHIV1iPiiG48IcxNInEKgf0z8X6iCigwj/IsRBDMeFvZXwWLEq5lN4CjnFq8SERNnH4B9bEfAfN9DHXwW6kSrQjWziBmuVf0BFMX75AAAAAElFTkSuQmCCq6eYvw==",
+                "origin": [
+                    733,
+                    125
+                ]
+            }
+        }
+    ]
+}

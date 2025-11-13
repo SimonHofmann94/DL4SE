@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29483630,
+            "classId": 50138,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:16:32.057Z",
+            "updatedAt": "2023-09-07T14:16:32.057Z",
+            "tags": [],
+            "classTitle": "defect_2",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtFAfJKRGUgeitGaC6TYAnxCXIH0////l96cfxfIYiwJ8gtmcHh2Iw3IMfV0cQypmJP848CBD/8ZDv+Xb+a72q+0aOJfhkX8PN/4Jd7wG9wwN7hhbHDDwCDCwEDCwEDDgIEhbqtOwuYH8nuBBjB4uvq5rHNKaAIATL8tNw==",
+                "origin": [
+                    951,
+                    52
+                ]
+            }
+        },
+        {
+            "id": 29483629,
+            "classId": 50138,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:16:32.057Z",
+            "updatedAt": "2023-09-07T14:16:32.057Z",
+            "tags": [],
+            "classTitle": "defect_2",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJ8QNzEyAwkfb5kGwIptgCfEFcg/f///6U3598FshhLgvyCGRye3UgDctQ8XRxDKuYkJ9gcUKhveGjv+YJRLMTf9UtjSoq/0C/HVJX+tn8Tuhg+ia+LneFfNROog8HT1c9lnVNCEwBHNSdl",
+                "origin": [
+                    911,
+                    126
+                ]
+            }
+        }
+    ]
+}

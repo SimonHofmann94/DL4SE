@@ -1,0 +1,110 @@
+# ============================================================================
+# RECOMMENDED CONFIGURATION V2 - Improvements over V1
+# ============================================================================
+# Based on V1 results, this config aims to fix defect_1 false positives:
+#
+# V1 Results:
+#   defect_1: Precision 0.611, Recall 0.909 → many false positives
+#
+# V2 Changes:
+#   1. Reduce alpha for defect_1 (0.99 → 0.75) - reduce FP penalty
+#   2. Keep defect_2 at 0.70 (proven to work)
+#   3. Keep Blackout Augmentation enabled
+#
+# Expected Impact:
+#   - defect_1 Precision: 0.61 → 0.75-0.80
+#   - defect_1 F1: 0.73 → 0.80-0.85
+#   - Overall F1 Macro: 0.86 → 0.88-0.90
+# ============================================================================
+
+defaults:
+  - override hydra/hydra_logging: none
+  - override hydra/job_logging: none
+
+# Model configuration
+model:
+  name: "convnext_tiny_cbam"
+  num_classes: 5
+  pretrained: true
+  cbam_stages: [3, 4]
+
+# Loss function configuration
+loss:
+  type: "focal_loss"
+  # Alpha adjustments:
+  #   - no_defect: 0.375 (keep low - majority class)
+  #   - defect_1: 0.75 (reduced from 0.99 - fix false positives)
+  #   - defect_2: 0.70 (proven value from V1)
+  #   - defect_3: 0.375 (keep low - working well)
+  #   - defect_4: 0.99 (keep high - working well)
+  alpha: [0.375, 0.75, 0.70, 0.375, 0.99]
+  gamma: 2.5
+  reduction: "mean"
+  use_effective_num: false
+  beta: 0.99
+
+# Data configuration
+data:
+  img_dir: "data/images"
+  ann_dir: "data/annotations"
+  batch_size: 24
+  num_workers: 4
+  pin_memory: true
+  image_size: [256, 1600]
+  num_classes: 5
+  class_names: ["no_defect", "defect_1", "defect_2", "defect_3", "defect_4"]
+  split_strategy: "stratified_70_15_15"
+
+# Augmentation configuration
+augmentation:
+  horizontal_flip: 0.5
+  vertical_flip: 0.5
+  brightness_contrast:
+    brightness: 0.3
+    contrast: 0.3
+  
+  # Defect Blackout - Keep enabled (critical!)
+  defect_blackout:
+    enabled: true
+    instance_blackout_prob: 0.5
+    defect_indices_to_blackout: [1, 2]
+    min_pixels_to_blackout: 15
+    complete_blackout_prob: 0.0
+    fill_value: 0
+    verbose: false
+
+# Training configuration
+training:
+  num_epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  warmup_epochs: 5
+  early_stopping_patience: 15
+  early_stopping_metric: "f1_macro"
+  log_interval: 10
+  threshold: 0.5
+  freeze_backbone: false
+  freeze_early_stages: null
+
+# Optimization
+optimizer:
+  type: "adamw"
+  lr: 0.001
+  weight_decay: 0.0001
+  betas: [0.9, 0.999]
+
+scheduler:
+  type: "cosine"
+  warmup_epochs: 5
+
+# Experiment configuration
+experiment:
+  name: "best_v2_alpha_tuned"
+  seed: 42
+  save_dir: "code/experiments/results"
+
+hydra:
+  run:
+    dir: code/experiments/results/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  job:
+    chdir: false

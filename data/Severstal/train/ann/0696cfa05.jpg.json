@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29481598,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:12:19.435Z",
+            "updatedAt": "2023-09-07T14:12:19.435Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBLwHQ/olQTkcNChoKAAAADUlIRFIAAAC0AAABAAEDAAAAIC/OpgAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAADXSURBVHic7dgxDsMgDAVQVx06cgSOwtHgaByFIzAyRHGjpm2QakeyREKgeEJPTEjmGwAAMAJRuFSiGXFiHHET43NHt6p+b/o6enh8lnPuWS1u/8yNxLF915266tLd1rOd+b1TvzXhXux0YAzvxm0JD8OHn+ixnJvhx3uo57YFL3UPXzBfivjV5qhyLpszoXmn3wWFfK7nqgWf5K579MS7acT1kR55V5Wc7LsTnLzHQj0nc8QL3TEOvFO5PAt9Yjztuf31yHgQut9zk321w3ow7uURyDKkPgGH9qYowYD74wAAAABJRU5ErkJggmAUhW8=",
+                "origin": [
+                    1,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29481597,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:12:19.435Z",
+            "updatedAt": "2023-09-07T14:12:19.435Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBaAGX/olQTkcNChoKAAAADUlIRFIAAAEOAAABAAEDAAAAeHUKlgAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEQSURBVHic7doxDoMwDAVQqg4dcwSOkqORo+UoHCEjQ4RbQiuQiuzIWJUb7M3oDSiIEJLfdQ5eFbt9DQDTvi9kqbx0/aeDeSPbxa8KNAEYC/EYgVRJBhGCihqyDOFNhNxFyEOEOBHSnybZCJfMRrgEmiReCwlGuCQa4ZLRyGElI1wyGeGSTK3OL0pmI1wCRtgkGDmsaIRLxgYJJYRIMnJYkxEuyVckmh6ADNH0NiZ6xqwguiZ4kmj6wsoQTcstGaJpYf3D/yOvheTmiKadExmiaRutgmjaMK0jPUFicyT8F6k7NHM0IQ7lgc4QAB15ADJbseY08LP9QvAowpr2GGiC3sxKHE3QwStBFHzw3sTj5AlX9fz1YgoHdwAAAABJRU5ErkJggoEgjMY=",
+                "origin": [
+                    1025,
+                    0
+                ]
+            }
+        }
+    ]
+}

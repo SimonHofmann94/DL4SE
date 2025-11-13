@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29493808,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:33:54.344Z",
+            "updatedAt": "2023-09-07T14:33:54.344Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtIqQPybkRlIWixbogik2AJ8QlyB9P///5fenH8XyGIsCfILZnB4diMNyFnm6eIYUjFn7ZWNvMyKPKwBF0Sn9BzQ6GFbbMilHBBXeMjQzaXgJOsE549W0Uz1yi08TP2dKVq3XnnGpejt0gqx5RKw2tjK4vHkZqcuX4OPU/DCeTzNVQfPryrtX/kx8GRAQQmPrrPxrGtbZu/yfXgzf/33bL2HF6u1/riUBvtcObtn8cLcqOuX+PR2WXOlrbh/ke//5XNfrKXmLVq5/ezc8PSfk68mvOqZWxGr4xB/vFAqLUTxGcinDJ6ufi7rnBKaAFuuZD0=",
+                "origin": [
+                    71,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29493807,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:33:54.344Z",
+            "updatedAt": "2023-09-07T14:33:54.344Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBkgFt/olQTkcNChoKAAAADUlIRFIAAADBAAAAYgEDAAAA0wQlnwAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAE6SURBVHicldaxDcMgEIVhIhcpGYFRWCsdjOZRPILLFBZEivLMwbsLgjKfxJ1/F45z8vj6O4frzwao70FuqKWH2KRmdcg4aJPQDYqdiEGP2p826DmIdZmQ8bJiXlbMyy7rsvY83pTxsnpal90ybtaK0pi6TyWQICit9kfwOMkUgmIKgnICyEbyngpnQ1BPYgeFBBIEjQuCoInEjDMPytkgHGcelLNBPIkdFBJIEDQuCIImEgQl+CNmNgjHQVCOc03FkyBoWBAEjSTIlhYEQQkgSpy8ng3CceygEE+CoGFBEDSSIGhaEAQlgChxpkGVbNmKYweFeAIEDSSnJfcXLhpTOM5hifjG63vxnF1I96Snk0cMujqQEXIv7TUcbjjYYfz3c7+hQoAddkU8Lyx2uDT47pB12XhhnJfy2wdPDRCDTteskQAAAABJRU5ErkJggithoiY=",
+                "origin": [
+                    697,
+                    0
+                ]
+            }
+        }
+    ]
+}

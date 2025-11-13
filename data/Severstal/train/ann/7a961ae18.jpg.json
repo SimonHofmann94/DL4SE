@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29490531,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:28:19.401Z",
+            "updatedAt": "2023-09-07T14:28:19.401Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBYQGe/olQTkcNChoKAAAADUlIRFIAAAInAAAAPgEDAAAAytgp5AAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEJSURBVHicrdbBDYMwDIVhNmCEjtLRymgdhRF65IBwKyoEIbHzbD8P8B2e/kgZxmkg3CgzRZGFoshGUUQ4irwpinwoiqwZ5XEoqY1PRWSiKPEACyUcYKlEN74pwQArJRRgrUQCbCiBjVuKP8Cm4g5QUZwBaopvY1VxBagrngCfhoIHaCrwxraCBthRwAB7ChZgX0E2BhQgQETpBwgp3QBBpbMxqtgBwooZIK5YAToUY+OXR1ED9ClagE5FCdCrtDd2K80AA0ojwIhSBxhSqo1jyj3AqFIGGFaKAOPKdeOEcgkwo5wB5pQjwBxybJxV/gGmlT1AgvILkKFsFGWlKAtJGexvJnScdzl/AUZXCEceun0TAAAAAElFTkSuQmCCKTiAlQ==",
+                "origin": [
+                    0,
+                    194
+                ]
+            }
+        },
+        {
+            "id": 29490530,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:28:19.400Z",
+            "updatedAt": "2023-09-07T14:28:19.400Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwBOQHG/olQTkcNChoKAAAADUlIRFIAAADDAAAAPQEDAAAAKilPgAAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAADhSURBVHicdZOxEYMwEATFOCAzJVAKpYnSVAolOHTg8Xs8tvT/dzrSHZblBOVe1LU9JbFLkN3slOQliT0ksSbJe0aOL7FZ+o/M0v9kkt4Jp3fC6bUTSneC6U4wPRBIjySnR5DTE0npmcT0I5OQvsFNnr4ACekV0al0nn5D4umkG+k7kd63EhlPImJihhDOup5AM/gOpBtvtMk40vlZVJXNurE3rdqkbsTRqn7mOEP48GQ2zVCkzuNwhkvqPBtnCH8Z6OL/UlUc6k4nsGqTupANq0aySlI0STPEgqxLZJEkpbcPAIYYGy0lm8IAAAAASUVORK5CYIIDJYVO",
+                "origin": [
+                    701,
+                    195
+                ]
+            }
+        }
+    ]
+}

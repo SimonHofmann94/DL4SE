@@ -1,0 +1,64 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29484438,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:17:38.549Z",
+            "updatedAt": "2023-09-07T14:17:38.549Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtKmQOzGyAwkw+b5xQAptgCfEFcg/f///6U3598FshhLgvyCGRye3UgDcvo9XRxDKuaUXtwoeFiBhzXgp0ZMFotb4tqSCpP+SYIxuz5EGsZbNdcLccUxfp84wSNa/01Q+XE+9rgbmovMMpR+PnRaFyS37yTvxrtz7xx5tM+172i1WGnIph65wOv8U+e4r/8nbDmxxq5653avtE0Tpurc+zb9Z7/VrrLA85d8/9Xec5deXy8u13b0+N2mhUrLWBk8HzDPZQraYidm4QB0GoOnq5/LOqeEJgCP4Fi9",
+                "origin": [
+                    1500,
+                    4
+                ]
+            }
+        },
+        {
+            "id": 29484437,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:17:38.548Z",
+            "updatedAt": "2023-09-07T14:17:38.548Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtIaQOzDyAwkVUPTk4AUW4BPiCuQ/v///9Kb8+8CWYwlQX7BDA7PbqQBOR2eLo4hFXNyLxoKHVHgYA3YFB1RxdL/6OKkxZUi/QkzlZRPuycbaB/VlkhIUFjEr3iHsbZp4YGKQ3u5pDf/CJXdPKXK1MDbec7ZY0lbfgbKv7P0/fU54mZVufL9ZydzMw9pes+9tkfXolxD+8PN3sPc3Tys6yaf2LyxLPp98uyYnp2vS509dry7tP/F8phF8mIrfqil5yfyA93E4Onq57LOKaEJAN8IVzk=",
+                "origin": [
+                    1507,
+                    153
+                ]
+            }
+        },
+        {
+            "id": 29484436,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:17:38.547Z",
+            "updatedAt": "2023-09-07T14:17:38.547Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJKQKzJyAwks/wynYAUW4BPiCuQ/v///9Kb8+8CWYwlQX7BDA7PbqQBOQmeLo4hFXN8zx/kPKAgwHJAmLkyyslr45aIWUsjnObZHTl7r3FD0+eI1K9n9D5/bclX52y+N0MuuZonQGb2jaOKdY9Erk+cG91y64helt73mwGHhc5a+ny06v/pv/r0cm276anv5INUqu9fX73zKdAuBk9XP5d1TglNAGmKRq0=",
+                "origin": [
+                    38,
+                    181
+                ]
+            }
+        }
+    ]
+}

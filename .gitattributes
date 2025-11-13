@@ -1,6 +1,10 @@
 # Track all zip files with Git LFS
 *.zip filter=lfs diff=lfs merge=lfs -text
-
+# Track Severstal dataset images and annotations
+data/Severstal/train/img/ filter=lfs diff=lfs merge=lfs -text
+data/Severstal/train/ann/ filter=lfs diff=lfs merge=lfs -text
+data/Severstal/test/img/ filter=lfs diff=lfs merge=lfs -text
+data/Severstal/test/ann/ filter=lfs diff=lfs merge=lfs -text
 # Also track model checkpoints if they get large
 *.pt filter=lfs diff=lfs merge=lfs -text
 *.pth filter=lfs diff=lfs merge=lfs -text

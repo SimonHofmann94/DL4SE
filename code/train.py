@@ -229,13 +229,27 @@ def build_loss(cfg: DictConfig) -> torch.nn.Module:
     logger.info(f"Loss: {cfg.loss.type}")
     logger.info(f"Available losses: {list(loss_registry.list_losses().keys())}")
     
-    loss_fn = loss_registry.get(
-        cfg.loss.type,
-        num_classes=cfg.data.num_classes,
-        alpha=cfg.loss.alpha,
-        gamma=cfg.loss.gamma,
-        reduction=cfg.loss.reduction
-    )
+    # Convert alpha from OmegaConf to native Python type
+    alpha = cfg.loss.alpha
+    if isinstance(alpha, (list, tuple)) or OmegaConf.is_list(alpha):
+        alpha = list(alpha)  # Convert OmegaConf ListConfig to Python list
+        logger.info(f"Converted alpha from config: {alpha}")
+    
+    # Build loss parameters
+    loss_params = {
+        "num_classes": cfg.data.num_classes,
+        "alpha": alpha,  # Now properly converted
+        "gamma": cfg.loss.gamma,
+        "reduction": cfg.loss.reduction
+    }
+    
+    # Add optional Class-Balanced Loss parameters
+    if hasattr(cfg.loss, 'use_effective_num'):
+        loss_params['use_effective_num'] = cfg.loss.use_effective_num
+    if hasattr(cfg.loss, 'beta'):
+        loss_params['beta'] = cfg.loss.beta
+    
+    loss_fn = loss_registry.get(cfg.loss.type, **loss_params)
     
     logger.info(f"Loss configuration: {loss_fn.log_info()}")
     
@@ -316,6 +330,9 @@ def main(cfg: DictConfig) -> None:
     project_root = Path(__file__).parent.parent
     experiment_dir = project_root / cfg.experiment.save_dir
     
+    # Convert OmegaConf to dict for JSON serialization
+    config_dict = OmegaConf.to_container(cfg, resolve=True)
+    
     trainer = Trainer(
         model=model,
         loss_fn=loss_fn,
@@ -326,7 +343,8 @@ def main(cfg: DictConfig) -> None:
         scheduler=None,  # Will be created in train()
         device=device,
         experiment_dir=str(experiment_dir),
-        class_names=cfg.data.class_names
+        class_names=cfg.data.class_names,
+        config=config_dict  # Pass config for saving
     )
     
     # Train

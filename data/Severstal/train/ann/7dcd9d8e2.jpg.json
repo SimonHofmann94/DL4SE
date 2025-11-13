@@ -1,0 +1,82 @@
+{
+    "description": "",
+    "tags": [],
+    "size": {
+        "height": 256,
+        "width": 1600
+    },
+    "objects": [
+        {
+            "id": 29490763,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:28:46.994Z",
+            "updatedAt": "2023-09-07T14:28:46.994Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJwB7QIS/YlQTkcNChoKAAAADUlIRFIAAAOqAAABAAEDAAAAgKoZ/AAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAKVSURBVHic7dxNdoIwFIZhezpwyBJYikuDpbEUlsDQAUfaKlBCb1KjX8IR3zszPzyQq6AJeDgch4joD6qAhYV9PbaAhYWF3Q97hoWFdaKEhYWFhYWFhZWyJ1hYWFhY2IjoYF+JrWBhYWFhYWH3ysaosLCwsLCwsK/EfkSxLSwsLCwsLOzrsJ+wsLCwsLCwsFI26qFF2BxsAwsLCwt7N/v92/yyDTvEPSUrYW/fFWIOuNCxQ252HLL6rdh1beDLiIQdN7JWAiOgZDuD9SyUSdjyVru+afpaaH+alexKGOcVk7Or88VHoI+EPQ3WgY1stw1rJlfCVmN1bbFmcqWsWz2xtdFDyrYm2xo9JOxU3Tml009n6xkIKesCE2tdhxXsvN7gvmnniYL6b5dSybrHNbPtNqyRXAX7O+1iFxsnDC1b37E3MvZo13uKE7C9XdxdXy8PWss6Jwx3b47OTsWxtckWixatuTej81upZhdNFmwz80LW3YbFTtHbXRTsJcDOw6xn55NSYW1ByJ5WrboA26djx8+ZyY7DrGAru53NDgnZS4DtRax1V0HvZ6/DfHqeNechzn6217Cl2bT1DqSI9WyiScz6GvvYi4SNW0mSscU2bNwWFGwVKz7DPoY9w2oCFnYfbP1ubAW7T7aBhdVGCwu7C7Z7N3YDFTZHnGFh5WzcjUua+JmGi3vqSsZucFp+aOJexuZO8LwalDfBi9Xlahs2Z4KdtfR8CXaX8LMleH0jxkZsrnmbNRs/A69h4xccNGyWBFtshgSbbPoE22zyBNceN3GCvWzaBPvZpAkOsCkvDSE24aUhyKa79jdhNtW1/z82UYL/ZRMk+M4/uq50YnufeItSIdYx4i2eS3DkszOLeDTB3jR+AXlRqmiDmxj3AAAAAElFTkSuQmCCYfldVA==",
+                "origin": [
+                    403,
+                    0
+                ]
+            }
+        },
+        {
+            "id": 29490762,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:28:46.994Z",
+            "updatedAt": "2023-09-07T14:28:46.994Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJ7gNibkRlIfhCo9wRSbAE+Ia5A+v///0tvzr8LZDGWBPkFMzg8u5EG5PzydHEMqZgz9fJG0WYFkdZEG7EpfQc01k3yfZTRc4hjiphMfpNLxYHdrnETD63/8ZnF1yTlAIsPEBkpGFwAM7QOGEsAGUuYZXjv+bBlGDlN5ZSbySjiAEZKzQcO/OdtL3wTv/bV527dSfsSTC2eHxZd8DSZTVf+xmz97xmzF8q8P+Rw8n/eqSn7bzz14u/5+bnRUP417z1Jnp8H9rHdX3C++/3y89KGRvWeG3ieOC7jc/n3xuFJMruSfNUGnqh7/A+mHH2/Mv9Sz+bs3501sw4EFJx6pCSfrsEuKbLhVp3p+qZgsfWVbyvPne++vznz99PILX+95h2U4pxx/e9vRnHLOQcK5qT4AUOBwdPVz2WdU0ITAMYPjfw=",
+                "origin": [
+                    864,
+                    56
+                ]
+            }
+        },
+        {
+            "id": 29490761,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:28:46.993Z",
+            "updatedAt": "2023-09-07T14:28:46.993Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtJeQLyYkRlIiodKVQAptgCfEFcg/f///6U3598FshhLgvyCGRye3UgDcjw9XRxDKuYkJzQ0/WIWmPURqCxB7fP//wJqQFbAsj/1UQbSbfKX5Y6lSOw7U394xs90hplfvyT/kzh2hh/Ia+B49l/xlI1DuhqD+qVgnZOL3r9nAJnq6ueyzimhCQC+uT8E",
+                "origin": [
+                    1387,
+                    93
+                ]
+            }
+        },
+        {
+            "id": 29490760,
+            "classId": 50139,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "gr@datasetninja.com",
+            "createdAt": "2023-09-07T14:28:46.993Z",
+            "updatedAt": "2023-09-07T14:28:46.993Z",
+            "tags": [],
+            "classTitle": "defect_3",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtL6QGzEyAwkvy0UWAWk2AJ8QlyB9P///5fenH8XyGIsCfILZnB4diMNpNbTxTGkYk5yAgPTsXqFT///1yswufxVn7zq+JJ/AdM3LRf9yux2crJn49f/DSwqM5IS/jEyHLr67/d5D5m/QN0Mnq5+LuucEpoACgYxIw==",
+                "origin": [
+                    1525,
+                    132
+                ]
+            }
+        }
+    ]
+}

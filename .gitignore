@@ -60,11 +60,9 @@ data/images/*
 !data/images/.gitkeep
 data/annotations/*
 !data/annotations/.gitkeep
-data/Severstal/train_images/*
-data/Severstal/test_images/*
-data/Severstal/*
-!data/Severstal/train_images/.gitkeep
-!data/Severstal/test_images/.gitkeep
+
+# Note: data/Severstal/ is NOT ignored - it's tracked by Git LFS via .gitattributes
+# The .gitattributes file tells Git LFS to handle the image and annotation files
 
 # Keep .gitkeep files to preserve empty directories
 
