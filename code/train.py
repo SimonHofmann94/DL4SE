@@ -59,6 +59,56 @@ def setup_device() -> torch.device:
     return device
 
 
+def calculate_split_statistics(
+    train_labels: np.ndarray,
+    val_labels: np.ndarray,
+    test_labels: np.ndarray,
+    class_names: list
+) -> dict:
+    """
+    Calculate detailed statistics for train/val/test splits.
+    
+    Args:
+        train_labels: Label matrix for train set (N_train, C)
+        val_labels: Label matrix for val set (N_val, C)
+        test_labels: Label matrix for test set (N_test, C)
+        class_names: List of class names
+    
+    Returns:
+        Dictionary with split statistics
+    """
+    def get_class_counts(labels, class_names):
+        """Get count of samples for each class."""
+        counts = {}
+        for i, class_name in enumerate(class_names):
+            counts[class_name] = int(labels[:, i].sum())
+        return counts
+    
+    split_info = {
+        "train": {
+            "total_samples": int(len(train_labels)),
+            "class_counts": get_class_counts(train_labels, class_names)
+        },
+        "val": {
+            "total_samples": int(len(val_labels)),
+            "class_counts": get_class_counts(val_labels, class_names)
+        },
+        "test": {
+            "total_samples": int(len(test_labels)),
+            "class_counts": get_class_counts(test_labels, class_names)
+        },
+        "total": {
+            "total_samples": int(len(train_labels) + len(val_labels) + len(test_labels)),
+            "class_counts": get_class_counts(
+                np.vstack([train_labels, val_labels, test_labels]),
+                class_names
+            )
+        }
+    }
+    
+    return split_info
+
+
 def load_data(cfg: DictConfig, device: torch.device) -> tuple:
     """
     Load and prepare data.
@@ -167,6 +217,14 @@ def load_data(cfg: DictConfig, device: torch.device) -> tuple:
     logger.info(f"Val set: {len(val_dataset)} samples")
     logger.info(f"Test set: {len(test_dataset)} samples")
     
+    # Calculate split statistics for results.json
+    split_info = calculate_split_statistics(
+        train_labels=all_labels[train_idx],
+        val_labels=all_labels[val_idx],
+        test_labels=all_labels[test_idx],
+        class_names=cfg.data.class_names
+    )
+    
     # Create dataloaders
     train_loader, val_loader, test_loader = create_dataloaders(
         train_dataset,
@@ -177,7 +235,7 @@ def load_data(cfg: DictConfig, device: torch.device) -> tuple:
         pin_memory=cfg.data.pin_memory
     )
     
-    return train_loader, val_loader, test_loader
+    return train_loader, val_loader, test_loader, split_info
 
 
 def build_model(cfg: DictConfig, device: torch.device) -> torch.nn.Module:
@@ -311,7 +369,7 @@ def main(cfg: DictConfig) -> None:
     device = setup_device()
     
     # Load data
-    train_loader, val_loader, test_loader = load_data(cfg, device)
+    train_loader, val_loader, test_loader, split_info = load_data(cfg, device)
     
     # Build model
     model = build_model(cfg, device)
@@ -344,7 +402,8 @@ def main(cfg: DictConfig) -> None:
         device=device,
         experiment_dir=str(experiment_dir),
         class_names=cfg.data.class_names,
-        config=config_dict  # Pass config for saving
+        config=config_dict,  # Pass config for saving
+        split_info=split_info  # Pass split statistics
     )
     
     # Train

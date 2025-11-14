@@ -62,6 +62,7 @@ class Trainer:
         experiment_dir: str = "experiments/results",
         class_names: List[str] = None,
         config: Optional[Dict[str, Any]] = None,
+        split_info: Optional[Dict[str, Any]] = None,
     ):
         self.model = model
         self.loss_fn = loss_fn
@@ -73,6 +74,7 @@ class Trainer:
         self.device = device or torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.class_names = class_names or [f"class_{i}" for i in range(4)]
         self.config = config  # Store config for later saving
+        self.split_info = split_info  # Store split statistics
         
         # Setup experiment directory
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -511,6 +513,7 @@ class Trainer:
             "best_epoch": best_epoch,
             "optimal_thresholds": self.optimal_thresholds,  # Save learned thresholds
             "threshold_history": self.threshold_history,  # NEW: Track threshold evolution
+            "split_info": self.split_info,  # NEW: Detailed train/val/test split statistics
             "config": self.config,  # Save full training configuration
             "training_history": self.train_history,
             "metrics_history": self.metrics_history,
