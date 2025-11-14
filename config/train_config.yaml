@@ -9,17 +9,17 @@ defaults:
 
 # Model configuration
 model:
-  name: "convnext_tiny_cbam"
+  name: "convnext_tiny" # "resnet50" or "convnext_tiny" or "convnext_tiny_cbam"
   num_classes: 5
   pretrained: true
-  cbam_stages: [3, 4]
+  cbam_stages: [3, 4] # Only used if model is convnext_tiny_cbam
 
 # Loss function configuration
 loss:
   type: "focal_loss"
   alpha: [0.375, 0.75, 0.70, 0.375, 0.99]  #dynamic or manual alpha values: [no_defect, defect_1, defect_2, defect_3, defect_4]
   gamma: 2.5  # Increased from 2.5 - more aggressive focusing on hard examples
-  reduction: "mean"
+  reduction: "mean" 
   use_effective_num: false  # Use Class-Balanced Loss (Cui et al., CVPR 2019)
   beta: 0.99  # Hyperparameter for effective number calculation
 
