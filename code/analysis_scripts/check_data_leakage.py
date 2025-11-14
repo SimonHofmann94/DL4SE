@@ -185,7 +185,7 @@ def main():
     print("=" * 50)
     
     # Define experiment directory
-    experiment_dir = "code/experiments/results/experiment_20251113_083139"
+    experiment_dir = "experiments/results/experiment_20251113_173443"
     
     # Load experiment results
     print(f"📂 Loading experiment: {experiment_dir}")

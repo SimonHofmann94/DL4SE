@@ -49,7 +49,7 @@ augmentation:
   # Defect Blackout Augmentation (for wide-strip dataset only)
   # Helps model learn contextual features by randomly masking defect regions
   defect_blackout:
-    enabled: true  # Set to true to enable blackout augmentation
+    enabled: false  # Set to true to enable blackout augmentation
     instance_blackout_prob: 0.5  # Probability of blacking out each defect instance
     defect_indices_to_blackout: [1,2]  # null = all defects [1,2,3,4], or list like [2] for only defect_2
     min_pixels_to_blackout: 15  # Minimum defect size to consider for blackout
