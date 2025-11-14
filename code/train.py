@@ -171,21 +171,56 @@ def load_data(cfg: DictConfig, device: torch.device) -> tuple:
     
     logger.info(f"Using split strategy: {split_strategy} {split_ratios}")
     
+    # Initialize splitter
     splitter = StratifiedSplitter(random_state=cfg.experiment.seed)
-    train_idx, val_idx, test_idx = splitter.split(
-        all_labels,
-        split_ratios=split_ratios
-    )
+    
+    # Try to load existing splits first
+    splits_dir = project_root / cfg.data.splits_dir
+    use_saved_splits = cfg.data.get('use_saved_splits', True)
+    
+    if use_saved_splits:
+        logger.info(f"Attempting to load splits from {splits_dir}")
+        loaded_splits = splitter.load_splits(str(splits_dir), all_image_names)
+        
+        if loaded_splits is not None:
+            train_idx, val_idx, test_idx = loaded_splits
+            logger.info("✅ Using saved splits")
+        else:
+            logger.info("No saved splits found. Creating new splits...")
+            train_idx, val_idx, test_idx = splitter.split(
+                all_labels,
+                split_ratios=split_ratios
+            )
+            # Save the newly created splits
+            splitter.save_splits(
+                train_idx, val_idx, test_idx,
+                all_image_names,
+                save_dir=str(splits_dir),
+                split_name=split_strategy
+            )
+            logger.info("✅ New splits created and saved")
+    else:
+        logger.info("Creating new splits (use_saved_splits=False)")
+        train_idx, val_idx, test_idx = splitter.split(
+            all_labels,
+            split_ratios=split_ratios
+        )
     
     # Create subsets
     train_image_names = all_image_names[train_idx].tolist()
     val_image_names = all_image_names[val_idx].tolist()
     test_image_names = all_image_names[test_idx].tolist()
     
-    # Setup augmentations
-    transform = get_augmentation_pipeline(
+    # Setup augmentations - ONLY for training!
+    train_transform = get_augmentation_pipeline(
         image_size=tuple(cfg.data.image_size),
         augmentation_config=OmegaConf.to_container(cfg.augmentation)
+    )
+    
+    # Validation and test transforms - NO augmentation, only normalization
+    eval_transform = get_augmentation_pipeline(
+        image_size=tuple(cfg.data.image_size),
+        augmentation_config={}  # Empty config = only ToTensor + Normalize
     )
     
     # Create datasets
@@ -193,7 +228,7 @@ def load_data(cfg: DictConfig, device: torch.device) -> tuple:
         img_dir=str(img_dir),
         ann_dir=str(ann_dir),
         image_names=train_image_names,
-        transform=transform,
+        transform=train_transform,  # With augmentation
         num_classes=cfg.data.num_classes
     )
     
@@ -201,7 +236,7 @@ def load_data(cfg: DictConfig, device: torch.device) -> tuple:
         img_dir=str(img_dir),
         ann_dir=str(ann_dir),
         image_names=val_image_names,
-        transform=transform,
+        transform=eval_transform,  # NO augmentation
         num_classes=cfg.data.num_classes
     )
     
@@ -209,7 +244,7 @@ def load_data(cfg: DictConfig, device: torch.device) -> tuple:
         img_dir=str(img_dir),
         ann_dir=str(ann_dir),
         image_names=test_image_names,
-        transform=transform,
+        transform=eval_transform,  # NO augmentation
         num_classes=cfg.data.num_classes
     )
     

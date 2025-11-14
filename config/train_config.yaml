@@ -27,6 +27,7 @@ loss:
 data:
   img_dir: "data/images"
   ann_dir: "data/annotations"
+  splits_dir: "data/splits"  # Directory for saved train/val/test splits
   batch_size: 24  # Stable batch size for this GPU
   num_workers: 4  # Parallel data loading
   pin_memory: true  # Faster GPU transfers
@@ -36,6 +37,7 @@ data:
   
   # Split strategy: "stratified_70_15_15" or "stratified_80_10_10"
   split_strategy: "stratified_70_15_15"
+  use_saved_splits: true  # Use pre-saved splits if available, otherwise create new ones
 
 # Augmentation configuration
 augmentation:

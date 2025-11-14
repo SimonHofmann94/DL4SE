@@ -1,0 +1,8 @@
+{
+  "split_name": "stratified_70_15_15",
+  "random_state": 42,
+  "train_size": 4666,
+  "val_size": 999,
+  "test_size": 1001,
+  "total_size": 6666
+}

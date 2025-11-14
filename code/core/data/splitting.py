@@ -7,7 +7,10 @@ in the training set significantly hurts generalization.
 
 import numpy as np
 import torch
-from typing import List, Tuple, Dict
+import os
+import json
+from pathlib import Path
+from typing import List, Tuple, Dict, Optional
 import logging
 
 logger = logging.getLogger(__name__)
@@ -138,6 +141,119 @@ class StratifiedSplitter:
                 logger.warning(
                     f"Class {c} distribution may not be well preserved in train split"
                 )
+    
+    def save_splits(
+        self,
+        train_indices: np.ndarray,
+        val_indices: np.ndarray,
+        test_indices: np.ndarray,
+        image_names: np.ndarray,
+        save_dir: str,
+        split_name: str = "stratified_70_15_15"
+    ) -> None:
+        """
+        Save train/val/test splits to disk.
+        
+        Args:
+            train_indices: Training set indices
+            val_indices: Validation set indices
+            test_indices: Test set indices
+            image_names: Array of all image names
+            save_dir: Directory to save splits
+            split_name: Name of the split configuration
+        """
+        save_path = Path(save_dir)
+        save_path.mkdir(parents=True, exist_ok=True)
+        
+        # Save as text files (one image name per line)
+        with open(save_path / "train.txt", 'w') as f:
+            for idx in train_indices:
+                f.write(f"{image_names[idx]}\n")
+        
+        with open(save_path / "val.txt", 'w') as f:
+            for idx in val_indices:
+                f.write(f"{image_names[idx]}\n")
+        
+        with open(save_path / "test.txt", 'w') as f:
+            for idx in test_indices:
+                f.write(f"{image_names[idx]}\n")
+        
+        # Save metadata
+        metadata = {
+            "split_name": split_name,
+            "random_state": self.random_state,
+            "train_size": len(train_indices),
+            "val_size": len(val_indices),
+            "test_size": len(test_indices),
+            "total_size": len(image_names)
+        }
+        
+        with open(save_path / "split_metadata.json", 'w') as f:
+            json.dump(metadata, f, indent=2)
+        
+        logger.info(f"Splits saved to {save_path}")
+        logger.info(f"  train.txt: {len(train_indices)} images")
+        logger.info(f"  val.txt: {len(val_indices)} images")
+        logger.info(f"  test.txt: {len(test_indices)} images")
+    
+    def load_splits(
+        self,
+        save_dir: str,
+        all_image_names: np.ndarray
+    ) -> Optional[Tuple[np.ndarray, np.ndarray, np.ndarray]]:
+        """
+        Load previously saved splits from disk.
+        
+        Args:
+            save_dir: Directory containing saved splits
+            all_image_names: Array of all available image names
+        
+        Returns:
+            Tuple of (train_indices, val_indices, test_indices) or None if splits not found
+        """
+        save_path = Path(save_dir)
+        
+        # Check if all split files exist
+        required_files = ["train.txt", "val.txt", "test.txt"]
+        if not all((save_path / f).exists() for f in required_files):
+            logger.warning(f"Split files not found in {save_path}")
+            return None
+        
+        # Load image names from split files
+        def load_split_file(filename):
+            with open(save_path / filename, 'r') as f:
+                return [line.strip() for line in f if line.strip()]
+        
+        train_names = load_split_file("train.txt")
+        val_names = load_split_file("val.txt")
+        test_names = load_split_file("test.txt")
+        
+        # Convert names to indices
+        name_to_idx = {name: idx for idx, name in enumerate(all_image_names)}
+        
+        train_indices = np.array([name_to_idx[name] for name in train_names if name in name_to_idx])
+        val_indices = np.array([name_to_idx[name] for name in val_names if name in name_to_idx])
+        test_indices = np.array([name_to_idx[name] for name in test_names if name in name_to_idx])
+        
+        # Verify no overlap
+        assert len(set(train_indices) & set(val_indices)) == 0, "Overlap between train and val!"
+        assert len(set(train_indices) & set(test_indices)) == 0, "Overlap between train and test!"
+        assert len(set(val_indices) & set(test_indices)) == 0, "Overlap between val and test!"
+        
+        logger.info(f"Loaded splits from {save_path}")
+        logger.info(f"  train: {len(train_indices)} images")
+        logger.info(f"  val: {len(val_indices)} images")
+        logger.info(f"  test: {len(test_indices)} images")
+        
+        # Check for missing images
+        total_loaded = len(train_indices) + len(val_indices) + len(test_indices)
+        if total_loaded != len(all_image_names):
+            logger.warning(
+                f"Loaded {total_loaded} images, but {len(all_image_names)} available. "
+                f"Some images may be missing from splits."
+            )
+        
+        return train_indices, val_indices, test_indices
 
 
 if __name__ == "__main__":
