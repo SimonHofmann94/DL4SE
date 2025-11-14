@@ -137,7 +137,7 @@ def get_registry() -> ModelRegistry:
 
 def _register_default_models() -> None:
     """Register all default models on module import."""
-    from .backbones import ConvNextTinyCBAM
+    from .backbones import ConvNextTinyCBAM, ConvNextTiny, ResNet50
     
     registry = _default_registry
     
@@ -145,4 +145,16 @@ def _register_default_models() -> None:
         "convnext_tiny_cbam",
         ConvNextTinyCBAM,
         description="ConvNext-Tiny with CBAM modules at stages 3-4 for defect detection"
+    )
+    
+    registry.register(
+        "convnext_tiny",
+        ConvNextTiny,
+        description="Standard ConvNext-Tiny without attention modules (baseline)"
+    )
+    
+    registry.register(
+        "resnet50",
+        ResNet50,
+        description="Classic ResNet-50 with ImageNet pretrained weights"
     )
