@@ -425,8 +425,15 @@ class Trainer:
             ),
         }
         
-        if self.metrics_history["val_metrics"]:
-            results["best_val_metrics"] = self.metrics_history["val_metrics"][-1]
+        # Use metrics from best epoch (1-indexed, so subtract 1 for list index)
+        if self.metrics_history["val_metrics"] and best_epoch > 0:
+            best_idx = best_epoch - 1
+            if best_idx < len(self.metrics_history["val_metrics"]):
+                results["best_val_metrics"] = self.metrics_history["val_metrics"][best_idx]
+            else:
+                # Fallback if index out of range
+                logger.warning(f"Best epoch {best_epoch} out of range, using last validation metrics")
+                results["best_val_metrics"] = self.metrics_history["val_metrics"][-1]
         
         # Add test metrics
         if self.metrics_history["test_metrics"]:

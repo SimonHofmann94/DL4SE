@@ -9,7 +9,7 @@ defaults:
 
 # Model configuration
 model:
-  name: "resnet50" # 'convnext_tiny_cbam' or 'resnet50' or 'convnext_tiny'
+  name: "convnext_tiny_cbam" # 'convnext_tiny_cbam' or 'resnet50' or 'convnext_tiny'
   num_classes: 5
   pretrained: true
   cbam_stages: [3, 4]
